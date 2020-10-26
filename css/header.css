@@ -1,0 +1,79 @@
+header{
+    position:fixed;
+    z-index:5;
+    width:100%;
+    background-color: white;
+    height: 58px;
+}
+header div:nth-child(1){
+    display:flex;
+}
+#line{
+    width:100%;
+    height:25px;
+    cursor:pointer;
+}
+#nav_list{
+    padding:95px 3px;
+    width:250px;
+    margin : 30px 0px;
+    display: none;
+    background-color: white;
+    height:1200px;
+}
+nav li a {
+    color: #000;
+    font-size: 13px;
+    text-transform: uppercase;
+    position: relative;
+    text-align: left;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav li{
+  list-style: none;
+  padding:48px;
+}
+ .line {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: black;
+    left: 15px;
+    -webkit-transform-origin: 0px 4px;
+    -moz-transform-origin: 0px 4px;
+    -ms-transform-origin: 0px 4px;
+    -o-transform-origin: 0px 4px;
+    transform-origin: 6px 2px;
+    -webkit-transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, -webkit-transform 0.24s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    -moz-transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, -moz-transform 0.24s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.24s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.line:nth-child(1) {
+    top: 16px;
+}
+.line:nth-child(2) {
+    top: 26px;
+}
+.line:nth-child(3) {
+    top: 36px;
+}
+.close1 {
+    -webkit-transform: translateX(10px) rotate(45deg);
+    -moz-transform: translateX(10px) rotate(45deg);
+    -ms-transform: translateX(10px) rotate(45deg);
+    -o-transform: translateX(10px) rotate(45deg);
+    transform: translateX(10px) rotate(45deg);
+}
+.close2{
+    opacity: 0;
+}
+.close3 {
+    -webkit-transform: translateX(11px) rotate(-47deg);
+    -moz-transform: translateX(11px) rotate(-47deg);
+    -ms-transform: translateX(11px) rotate(-47deg);
+    -o-transform: translateX(11px) rotate(-47deg);
+    transform: translateX(11px) rotate(-47deg);
+}

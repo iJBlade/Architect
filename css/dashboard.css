@@ -1,0 +1,28 @@
+#hors_ligne,#en_ligne,#article,#off,#on,#produit{
+    text-decoration:none;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: 700;
+
+}
+#hors_ligne,#en_ligne,#article,#off,#on,#produit {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+#hors_ligne::after,#en_ligne::after,#article::after,#off::after,#on::after,#produit::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+#hors_ligne:hover::after,#en_ligne:hover::after,#article:hover::after,#off:hover::after,#on:hover::after,#produit:hover::after {
+    width: 100%;
+
+}
