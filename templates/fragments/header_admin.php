@@ -16,7 +16,7 @@
     <nav id="nav_list">
     <ul>
         <li><a href="home.php">Home</a></li><br>
-        <li><a href="spacemember.php">Espace Personnel</a></li>
+        <li><a href="all.php">Articles</a></li>
         <li><a href="dashboard.php">Tableau de bord</a></li>
         <li><a href="presentation.php">Présentation</a></li>
         <li><a href="contact.php">Contact</a></li>

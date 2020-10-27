@@ -10,40 +10,41 @@
         <link href="css/style.css" rel="stylesheet" type="text/css"/> 
         <link href="css/header.css" rel="stylesheet" type="text/css"/>  
         <link href="css/footer_blog.css" rel="stylesheet" type="text/css"/> 
-        <link href="css/all.css" rel="stylesheet" type="text/css"/>                
+        <link href="css/all.css" rel="stylesheet" type="text/css"/>
+        <link href="css/dashboard_article.css" rel="stylesheet" type="text/css"/>                  
         <title><?= htmlentities($article->getTitre())?></title>       
     </head>
     <body>
         <?php include 'templates/fragments/header.php'?>
     <body>
-        <main style="position:absolute;top:60px;left:25px;">
-            <div>
-                <?php  foreach ($lignes as $article){ ?>
-                        <h3><?= htmlentities($article->getTitre())?></h3><!-- titre  php-->
-            <!-- ici normalement il y a la photo de l'article comme dans notyourbabe <img style="width:700px;height:700px;"src=" htmlentities($article->getPhoto())"> -->
-                        <div style="display: flex;">
-                            <div>
-                                <img src="photo1/<?= htmlentities($article->getId())?>.jpg" width="400px" height="400px"/>  
-                            </div>   
-                            <div>
-                                <img src="photo2/<?= htmlentities($article->getId())?>.jpg" width="400px" height="400px"/>
-                            </div>
-                            <div>
-                                <img src="photo3/<?= htmlentities($article->getId())?>.jpg" width="400px" height="400px"/>                       
-                            </div>
-                        </div>             
-            
-                        <p><?= htmlentities($article->getContenu())?></p><!-- titre  contenu-->   
-                        <p><?= htmlentities($article->getContenu2())?></p><!-- titre  contenu-->   
-                        <p><?= htmlentities($article->getContenu3())?></p><!-- titre  contenu-->   
-                        <p><?= htmlentities($article->getContenu4())?></p><!-- titre  contenu-->   
-                     
-
+        <main style="position:absolute;top:60px;width:100%; ">
+        
+        <?php foreach($lignes as $article){ ?>   
+                <div id="medium_column"style="display:flex;">
+                    <div id="medium_column2">
+                        <div id="medium_column_parent">
+                                <div id="medium_child">
+                                    <h2>Animation</h2><!-- titre  php-->
+                                </div>
+                                <div id="medium_child2">
+                                    <h1><?= htmlentities($article->getTitre())?></h1>
+                                    <div id="border"></div>
+                                    <p><?= htmlentities($article->getContenu())?><!-- titre  contenu-->   
+                                    <p><?= htmlentities($article->getContenu2())?><!-- titre  contenu-->   
+                                    <p><?= htmlentities($article->getContenu3())?><!-- titre  contenu-->   
+                                </div>                                   
+                        </div> 
+                    </div>                            
+                    <div id="slider">                                                         
+                        <img src="photo1/<?= htmlentities($article->getId())?>.jpg" class="slide1" />                                     
+                        <img src="photo2/<?= htmlentities($article->getId())?>.jpg" class="slide2" />                                                                         
+                        <img src="photo3/<?= htmlentities($article->getId())?>.jpg" class="slide3" />                                     
+                    </div>
+                </div>
                 <?php } ?>
-            </div>
-            </main>
-            <?php  include "templates/fragments/footer_blog.php"?>                    
-        </body>
+        </main>
+        <?php  include "templates/fragments/footer_blog.php"?>                    
+    </body>
 </html>
 <script src="js/header.js" type="text/javascript"></script>
 <script src="js/all.js" type="text/javascript"></script>

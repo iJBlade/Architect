@@ -56,7 +56,8 @@
                         </div>       
                         <div>
                             <a href="delete.php?id=<?=$article->getId()?>">Supprimer cet article ? </a>   
-                            <a href="online.php?id=<?=$article->getId()?>">Mettre cet article en ligne? </a>         
+                            <a href="online.php?id=<?=$article->getId()?>">Mettre cet article en ligne? </a>
+                            <a href="dashboard_offline.php?id=<?=$article->getId()?>">Aperçu?</a>                  
                         </div>                                           
                 <?php } ?>
             </div>
