@@ -16,7 +16,7 @@ header div:nth-child(1){
 #nav_list{
     padding:95px 3px;
     width:250px;
-    /*margin : 30px 0px;*/
+    margin : 30px 0px;
     display: none;
     background-color: white;
     height:1200px;
@@ -33,7 +33,7 @@ nav li a {
 }
 nav li{
   list-style: none;
-  /*padding:48px;*/
+  padding:48px;
   
 }
  .line {
