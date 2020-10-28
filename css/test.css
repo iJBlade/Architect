@@ -9,14 +9,14 @@ body {
 	padding-left: 68px;
 	text-decoration: none;
 	font-size: 15px;
-	color: #5ff7d2;
+	color: gray;
 }
 .aCard{
     text-decoration:none;
     color:#fff;
 }
 .aCard:hover{
-    color: #5ff7d2;
+    color: gray;
 }
 #wrapper{
 	overflow: hidden;
@@ -174,7 +174,7 @@ body {
 	display:block;
 	width:0;	 
 	height:2px;
-	background:#5ff7d2;
+	background:gray;
 	top:6px;
 	left:2px;	
 	-ms-transform: rotate(45deg); 
@@ -194,7 +194,7 @@ body {
 	display:block;
 	width:0px; 
 	height:2px;
-	background:#5ff7d2;
+	background:gray;
 	top:4px;
 	left:3px;	
 	-ms-transform: rotate(13deg); 
@@ -372,7 +372,7 @@ div.large .make3D{
 }
 .stats-container .product_price{
 	float:right;
-	color:#5ff7d2;
+	color:gray;
 	font-size:22px;
 	font-weight:600;
 }
@@ -382,7 +382,7 @@ div.large .make3D{
 	left:0; 
 	width:100%;
 	height:100%;
-	background:#5ff7d2;
+	background:gray;
 	opacity:0;	
 }
 .make3D.animate .image_overlay{
@@ -427,7 +427,7 @@ div.large .make3D{
 }
 .add_to_cart:hover{	
 	background:#fff;
-	color:#5ff7d2;
+	color:gray;
 	cursor:pointer;
 
 }
@@ -459,7 +459,7 @@ div.large .make3D{
 }
 .view_gallery:hover{	
 	background:#fff;
-	color:#5ff7d2;
+	color:gray;
 	cursor:pointer;
 
 }
@@ -688,7 +688,7 @@ div.shadow{
 .carousel .x, .carousel .y{
 	height:2px;
 	width:15px;
-	background:#5ff7d2;
+	background:gray;
 	position:absolute;
 	top:31px;
 	left:17px;
@@ -803,7 +803,7 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 	margin-left:-65px;	
 }
 .cart-item img{width:100%; position:relative;top:-10px;}
-.cart-item strong{color:#5ff7d2; font-size:16px;}
+.cart-item strong{color:gray; font-size:16px;}
 .cart-item span{
 	color: #393c45;
     display: block;
@@ -832,14 +832,14 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 #info p{font-size:15px; padding:3px;color:#b1b1b3}
 #info a{text-decoration:none;} 
 #checkout{
-	border: 2px solid #5ff7d2;
+	border: 2px solid gray;
 	font-size: 13px;
 	font-weight: 700;
 	padding: 3px 9px;
 	position: absolute;
 	top: 137px;
 	left: 181px;
-	color: #5ff7d2;
+	color: gray;
 	display:none;
 }
 
@@ -906,7 +906,7 @@ div.sku strong{
 .price-big{
 	font-size: 34px;
     font-weight: 600;
-    color: #5ff7d2;
+    color: gray;
     margin-top: 21px;
 }
 .price-big span{
@@ -932,8 +932,8 @@ div.sku strong{
  		    transition: all 200ms ease-out;
 }
 .add-cart-large:hover{
-	color: #5ff7d2;
-	border-color:#5ff7d2;
+	color: gray;
+	border-color:gray;
 	-webkit-transition: all 200ms ease-out;
 	   -moz-transition: all 200ms ease-out;
 		-ms-transition: all 200ms ease-out;

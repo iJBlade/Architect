@@ -1,6 +1,12 @@
 <link href="css/test.css" rel='stylesheet' type='text/css'>
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link href="css/header.css" rel='stylesheet' type='text/css'>
+<link href="css/footer_blog.css" rel='stylesheet' type='text/css'>
+<?php include "templates/fragments/header.php"?>
+<main style="padding-top:92px">
+
+
 <div id="wrapper">
 <div class="cart-icon-top">
 </div>
@@ -8,19 +14,7 @@
 <div class="cart-icon-bottom"></div>
 
 <div id="checkout">
-	<a href="panier.php" style="text-decoration:none;color:#5ff7d2">PANIER</a>
-</div>
-
-<div id="info">
-<p>    Follow me on <a href="https://dribbble.com/virgilpana" style="color:#ea4c89" target="_blank">Instagram</a> | <a style="color:#2aa9e0" href="https://twitter.com/virgil_pana" target="_blank">Twitter</a></p>
-</div>
-
-<div id="header">	
-	<ul>
-        <li><a href="home.php">BLOG</a></li>
-        <li><a href="shop.php">SHOP</a></li>
-        <li><a href="panier.php">PANIER</a></li>                                            
-    </ul>		
+	<a href="panier.php" style="text-decoration:none;color:gray">PANIER</a>
 </div>
 
 <div id="sidebar">
@@ -195,10 +189,14 @@
     </div>
     <?php } ?>    
 <!-- fin d'un seul article avec possibilité de double vision en 3x3x3 et 2x2-->    
-
-    
+   
    
 </div>
 </div>
+</main>
+<?php include "templates/fragments/footer_blog.php" ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/shop.js" type="text/javascript"></script>
+<script src="js/shopping.js" type="text/javascript"></script>  
+<script src="js/header.js" type="text/javascript"></script>
+<script src="js/all.js" type="text/javascript"></script>

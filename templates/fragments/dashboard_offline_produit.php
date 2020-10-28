@@ -6,23 +6,13 @@
         Retour : détail produit -> $id; $categorie;
 
 */ 
-
+ 
 ?> 
-
-<link rel="stylesheet" href="scss\test.scss" type="text/css">
 <link href="css/fragment.css" rel='stylesheet' type='text/css'>
-
-<div id="header">	
-	<ul>
-        <li><a href="home.php">HOME</a></li>
-        <li><a href="spacemember.php">Espace personnel</a></li>
-        <li><a href="dashboard.php">Tableau de bord</a></li> 
-        <li><a href="presentation.php">Ma présentation</a></li>  
-        <li><a href="contact.php">Contact</a></li>
-        <li><a href="shop.php">Shop</a></li>
-        <li><a href="deconnexion.php">Déconnexion</a></li>                                 
-    </ul>		
-</div>
+<link href="css/header.css" rel='stylesheet' type='text/css'>
+<link href="css/footer_blog.css" rel='stylesheet' type='text/css'>
+<?php include "templates/fragments/header.php"?>
+<main style="padding-top: 85px;">
 <div style="text-align: center;font-weight: 700;color: red;font-size: 14px;text-decoration: none;text-transform: uppercase;letter-spacing: 1px;">
         <a href="delete.php?prod=<?=$produit->getId()?>" style="color:darkred;">Supprimer ce produit ? </a> 
         <a href="online.php?prod=<?=$produit->getId()?>" style="color :darkgreen"> Mettre ce produit en ligne ? </a>
@@ -31,7 +21,7 @@
 <div style="text-align: center;font-weight: 700;color: red;font-size: 14px;text-decoration: none;text-transform: uppercase;letter-spacing: 1px;">
 
 <h2>Aperçu du produit hors ligne.</h2>
-<p>Note : Cette page est l'aperçu de ce que la(e) visitrice(eur) voit lorsqu'il/elle consulte ce</p>
+<p>Note : Cette page est l'aperçu de ce que la(e) visitrice(eur) voit lorsqu'il/elle consulte ce produit</p>
 </div>
 
 <section aria-label="Main content" role="main" class="product-detail">
@@ -225,46 +215,7 @@
   </div>
 
 </section>
-<footer role="contentinfo" aria-label="Footer">
-  <div class="_cont">
-    <div class="socials">
-      <strong>follow me:</strong>
-      <ul>
-        <li><a  title="html-koder / test on Twitter" class="tw" target="_blank">Twitter</a></li>
-        <li><a  title="html-koder / test on Facebook" class="fb" target="_blank">Facebook</a></li>
-        <li><a  title="html-koder / test on Instagram" class="in" target="_blank">Instagram</a></li>
-        <li><a  title="html-koder / test on Pinterest" class="pi" target="_blank">Pinterest</a></li>
-      </ul>
-    </div>
-    <div class="top">
-      <div class="right">
-        <form method="post" action="/contact" class="contact-form" accept-charset="UTF-8">
-          <input type="hidden" value="customer" name="form_type" /><input type="hidden" name="utf8" value="✓" />
-          <div>
-            <input type="hidden" id="contact_tags" name="contact[tags]" value="newsletter"/>
-            <input type="text" id="contact_email" name="contact[email]" placeholder="Submit e-mail for special offers...">
-            <button type="submit" title="Newsletter Signup">OK</button>
-          </div>
-        </form>
-      </div>
-      <div class="left">
-        <span class="phone">+420 123 456 789</span>
-        <a class="mail" href="mailto:email.from@settings.com">email.from@settings.com</a>
-      </div>
-    </div>
-    <div class="bottom">
-      <div class="left">
-        <nav role="navigation" aria-label="Service menu">
-          <ul>
-            <li><a >Lorem ipsum</a></li>
-            <li><a >About Us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-</footer>
-
+<?php include "templates/fragments/footer_blog.php" ?>
 <!-- Quickbeam cart-->
 
 <div id="quick-cart" quickbeam="cart">
@@ -281,3 +232,5 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/shopping.js" type="text/javascript"></script>  
+<script src="js/header.js" type="text/javascript"></script>
+<script src="js/all.js" type="text/javascript"></script>

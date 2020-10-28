@@ -18,8 +18,8 @@
         <div>
             <ul style="background-color: white; width:299px">
                 <li><a href="home.php">Home</a></li><br>
-                <li><a href="all.php">Article</a></li>
-                <li><a href="presentation.php">A propos de moi</a></li>
+                <li><a href="all.php">Portfolio</a></li>
+                <li><a href="presentation.php">About</a></li>
                 <li><a href="shop.php">Shop</a></li>
             </ul>
             <div style="width:1700px;height:1200px;background-color:rgba(51,51,51,0.71); visibility:visible;opacity:1;"></div>

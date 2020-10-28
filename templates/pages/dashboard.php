@@ -3,7 +3,6 @@
 /*
     Tableau de bord de l'administratrice Marie. Les clients ne peuvent le voir et cette page concentre le récapitulatif de tous ses articles/produits , en cours de publication ou publié 
 */ 
-
 ?>
 <html>
     <head>
@@ -18,7 +17,7 @@
         <link href="css/all.css" rel="stylesheet" type="text/css"/> 
         <link href="css/dashboard.css" rel="stylesheet" type="text/css"/>
         <link href="css/create.css" rel="stylesheet" type="text/css"/>                 
-        <title>Articles</title>       
+        <title>Tableau de bord</title>       
     </head>
         <body>
             <?php include 'templates/fragments/header.php'?>
@@ -36,7 +35,12 @@
                         <a href="#" id="produit">Créer un nouveau produit</a>
                     </div>
                 </div>
+
+
+
+
                 <div style="text-align: center;">
+                    <?php include "templates/fragments/compteur.php"?>
                     <?php include "templates/fragments/article_en_cours.php"?>   
                     <?php include "templates/fragments/article_en_ligne.php"?>
                     <?php include "templates/fragments/create_art.php"?>

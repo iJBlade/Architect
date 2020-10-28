@@ -20,6 +20,15 @@
         $produit->loadFromTab($_POST);
         $result=$produit->recherche(); // affichage des produits en ligne
         $tab=$produit->rechercheNo_online(); // affichage des produits non en ligne
+ 
+        // pour le compteur 
+        $ip = $_SERVER['REMOTE_ADDR']; // l'adresse IP du visiteur
+        $date = date('Y-m-d'); // la date d'aujourd'hui , sous le format AAAA-MM-JJ
+        $sql= "INSERT INTO stats_visites (ip , date_visite , pages_vues) VALUES (:ip , :date , 1)
+        ON DUPLICATE KEY UPDATE pages_vues = pages_vues + 1 ";
+        $req = $bdd->prepare($sql);
+        $req->execute(array( ':ip'   => $ip, ':date' => $date));
+        
 
         include "templates/pages/dashboard.php";
     }else{

@@ -96,7 +96,7 @@ button {
     }
     
     h1 {
-        color: #fff;
+        color: black;
         font-size: 2em; font-weight: 600;
         margin: 1em 0 1.5em;
         text-align: center;
@@ -180,4 +180,7 @@ button {
             border-bottom-style: none;
             border-bottom-width: 0px;
         border-bottom: 1px solid black;
+    }
+    .svg-icon{
+        width:15px;
     }

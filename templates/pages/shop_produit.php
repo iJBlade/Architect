@@ -7,7 +7,7 @@
         <?php include 'templates/fragments/header.php'?>
         <main>
             <div>
-            <?php while( $produit=$select->fetch(PDO::FETCH_OBJ)){ ?>
+            <?php while( $produit=$select->fetch(PDO::FETCH_OBJ)){ ?> 
                     <div>
                     <div style="display: flex;">
                             <div>
