@@ -1,0 +1,152 @@
+
+        
+form label, .fat, .fat-send {
+    -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+}
+form {
+    position: absolute; left: calc(50% - 250px); top: 30%;
+    display: inline-block;
+    width: 500px;
+    box-sizing: border-box;
+    padding: 30px 25px;
+    border-radius: 4px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2em; font-weight: 600;
+    margin: 1em 0 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.group-form {
+    position: relative;
+    padding: 10px 0;
+}
+.group-form:first-of-type {padding-top: 0;}
+.group-form:last-of-type {padding-bottom: 0;}
+
+.fat {
+    border: 1px solid #1d2027;
+    background-color: #fff;
+    width: 100%;
+    position: relative; z-index: 1;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    color: #272a33;
+    line-height: 0;
+    font-size: 1em;
+}
+.fat:focus, .fat:valid {
+    background-color: #fff;
+    color: #000;
+    margin-top: 30px;
+}
+.fat:focus ~ label {
+    -webkit-transform: translate(0, -40px);
+    transform: translate(0, -40px);
+    color: #000;
+}
+.fat:valid ~ label {
+    -webkit-transform: translate(0, -40px);
+    transform: translate(0, -40px);
+    color: #000;
+}
+
+.fat.error {
+    border-color: #e74c3c;
+}
+
+.fat-send {
+    border: 1px solid #1d2027;
+    background-color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 15px 28px;
+    color:#000;
+    line-height: 0;
+    font-size: 1em;
+}
+.fat-send:hover {
+    background-color: #1d2027;
+    color:#fff;
+}
+
+label {
+    transform-origin: left center;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: block;
+    position: absolute;
+    margin-top: -34px;
+    z-index: 2;
+    pointer-events: none;
+    color: #000;
+    line-height: 0;
+    font-size: 1.25em;
+}
+
+.forgot-password {
+    color:#000;
+    float: right;
+    margin-top: 14px;
+    transition: color 0.25s;
+}
+.forgot-password:hover {
+    color: rgba(255,255,255,0.6);
+}
+
+/********************/
+
+#p_anim {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+}
+
+#anim {
+
+	font: 700 5em/1 "Oswald", sans-serif;
+	letter-spacing: 50;
+	padding: .25em 0 .325em;
+	display: block;
+	margin: 0 auto;
+	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	background: url(http://static.colourlovers.com/uploads/images/4/44/44982.pic.jpg) repeat-y;
+	-webkit-background-clip: text;
+
+/* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 10s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: -200% 50%; }
+	100% { background-position: 250% 50%; }
+  0% { background-position: -100% 50%; }
+}

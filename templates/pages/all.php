@@ -18,7 +18,7 @@
             <main style="position:absolute;top:60px">
                 <div>
                     <?php  foreach ($lignes as $article){ ?>
-                        <figure class="snip1584">
+                        <figure class="snip1584"> 
                             <img src="photo1/<?= htmlentities($article->getId())?>.jpg" alt="sample87"/>
                             <figcaption>
                                 <h3><?= htmlentities($article->getTitre())?></h3>

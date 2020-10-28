@@ -1,3 +1,39 @@
+/**animation*/
+#p_anim {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+}
+
+#anim {
+    font-size:30px;
+	display: block;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    text-decoration:none;
+
+/* Clip Background Image */
+
+	background: url("../admin/degrader.jpg") repeat-y;
+	-webkit-background-clip: text;
+
+/* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 10s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: -200% 50%; }
+	100% { background-position: 250% 50%; }
+  0% { background-position: -100% 50%; }
+}
 /*** colonne de gauche**/
 
 #top_column{
@@ -142,3 +178,4 @@
         opacity: 0;
     }
 }
+

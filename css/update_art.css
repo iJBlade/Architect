@@ -1,0 +1,113 @@
+a{
+    text-decoration:none;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: 700;
+    padding-left: 9px;
+    cursor:pointer;
+
+}
+a{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+    cursor:pointer;
+}
+
+a:hover::after{
+    width: 100%;
+    cursor:pointer;
+
+}
+#Up{
+    font-size:22px;
+    border: 1px solid black;
+    padding: 40px 0px;
+    margin : 40px 0px;
+}
+h1{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#Up_sub{
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+#Up_sub:hover{
+    background: black;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    color:white;
+}
+#Update_textarea{
+    width: 1500px;
+    height: 100px;
+}
+#Update_titre{
+    width: 300px;
+    height: 50px;
+}
+#Update_prix{
+    width:300px;
+    height:50px;
+}
+#b01,#b1-1,#b2-1,#b3-1{
+    font-size: 20px; 
+    border-radius: 13px; 
+    background-color: red; 
+    color: white; 
+    display: none;
+    position: relative;
+    top: 10%;
+    right: -46%;
+    width: 29px;
+    border: 1px solid red; 
+    cursor:pointer;
+}
+#b3-1{
+    font-size: 20px; 
+    border-radius: 13px; 
+    background-color: red; 
+    color: white; 
+    display: none;
+    position: relative;
+    top: 10%;
+    right: -7%;
+    width: 29px;
+    border: 1px solid red; 
+    cursor:pointer;
+}
+#b01{
+    font-size: 20px; 
+    border-radius: 13px; 
+    background-color: red; 
+    color: white; 
+    display: none;
+    position: relative;
+    top: 35%;
+    right: -30%;
+    width: 29px;
+    border: 1px solid red; 
+    cursor:pointer;
+}
+#ttc{
+    font-size:15px;
+    color:grey;
+}
+
+

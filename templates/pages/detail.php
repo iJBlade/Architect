@@ -10,7 +10,6 @@
         <link href="css/style.css" rel="stylesheet" type="text/css"/> 
         <link href="css/header.css" rel="stylesheet" type="text/css"/>  
         <link href="css/footer_blog.css" rel="stylesheet" type="text/css"/> 
-        <link href="css/all.css" rel="stylesheet" type="text/css"/>
         <link href="css/dashboard_article.css" rel="stylesheet" type="text/css"/>                  
         <title><?= htmlentities($article->getTitre())?></title>       
     </head>
@@ -24,7 +23,7 @@
                     <div id="medium_column2">
                         <div id="medium_column_parent">
                                 <div id="medium_child">
-                                    <h2>Animation</h2><!-- titre  php-->
+                                <p id="p_anim"><a id="anim" href="all.php">Portfolio</a></p><!-- titre  php-->
                                 </div>
                                 <div id="medium_child2">
                                     <h1><?= htmlentities($article->getTitre())?></h1>

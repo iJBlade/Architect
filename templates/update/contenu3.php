@@ -1,6 +1,6 @@
 <form method="POST" id="contenu3" style="display: none;" >
-    <textarea name="contenu3" value=""></textarea>
-    <input type="submit" name="form_modif" value="Modifier">
+    <textarea name="contenu3" value="" id="Update_textarea"></textarea><br>
+    <input type="submit" name="form_modif" value="Modifier" id="Up_sub">
 </form>
 <div id="message"></div>
 

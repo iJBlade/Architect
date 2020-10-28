@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <?php // Page où il y a le formulaire de connexion pour administrateur/trice ?>
 <html>
-    <?php include 'templates/fragments/head.php' ?>
-    <title>Connexion</title>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+        <link href="css/style.css" rel="stylesheet" type="text/css"/> 
+        <link href="css/header.css" rel="stylesheet" type="text/css"/>
+        <link href="css/co.css" rel="stylesheet" type="text/css"/>  
+        <link href="css/footer_blog.css" rel="stylesheet" type="text/css"/>
+        <title>HOME</title>       
+    </head> 
     <body>
-        <?php include 'templates/fragments/header.php' ?>
-        <title>Connexion</title>
+        <?php include "templates/fragments/header.php" ?>
         <main>
+            <!-- Google Font -->
+
+            <p id="p_anim"><span id="anim">Connexion</span></p>
+
             <form method="POST" action="spacemember.php">
-                <h1>Connexion</h1>
                 <div class="group-form">
                     <input type="email" name="email" class="fat" id="email" required>
                     <label>Email</label>
@@ -24,7 +36,10 @@
                 <div>
                     <?php if(isset($erreur)){echo $erreur ; }else{}?>
                 </div>
-            </form>   
-        </main>
-    </body>
+            </form>  
+        </main> 
+        <?php  include "templates/fragments/footer_blog.php"?>                    
+        </body>
 </html>
+<script src="js/header.js" type="text/javascript"></script>
+<script src="js/all.js" type="text/javascript"></script>

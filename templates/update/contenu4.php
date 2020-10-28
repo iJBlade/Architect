@@ -1,6 +1,6 @@
 <form method="POST" id="contenu4" style="display: none;" >
-    <textarea name="contenu4" value=""></textarea>
-    <input type="submit" name="form_modif" value="Modifier">
+    <textarea name="contenu4" value="" id="Update_textarea"></textarea><br>
+    <input type="submit" name="form_modif" value="Modifier" id="Up_sub">
 </form>
 <div id="message"></div>
 
@@ -17,10 +17,7 @@ $(document).ready(function(){
         $("#contenu4").hide(300);
         $("#b4-1").hide(300,"linear");        
         $("#b4").show();
-
-    });
-
-    
+    });    
 });
 $(function(){
     $("#contenu4").submit(function(){//id de la barre de recherche    

@@ -19,6 +19,7 @@
         $linkProd = $_GET["prod"];
         $produit= new produit($linkProd);//construct cherche la correspondance
         $produit->loadFromTab($_POST);
-        $produit->modifier($linkProd);           
+        $produit->modifier($linkProd);    
+        header("Location: update_art.php?prod= <?= $linkProd ?>");       
       }
 

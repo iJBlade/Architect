@@ -255,7 +255,7 @@
 
         </div>
         <div class="more-products" id="more-products-wrap">
-          <span id="more-products" data-rows_per_page="1"><a href="test.php" style="text-decoration: none;">Plus de produits</a></span>
+          <span id="more-products" data-rows_per_page="1"><a href="shop.php" style="text-decoration: none;">Plus de produits</a></span>
         </div>
       </div>
     </aside>

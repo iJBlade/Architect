@@ -16,7 +16,8 @@
         <link href="css/header.css" rel="stylesheet" type="text/css"/>  
         <link href="css/footer_blog.css" rel="stylesheet" type="text/css"/>  
         <link href="css/all.css" rel="stylesheet" type="text/css"/> 
-        <link href="css/dashboard.css" rel="stylesheet" type="text/css"/>               
+        <link href="css/dashboard.css" rel="stylesheet" type="text/css"/>
+        <link href="css/create.css" rel="stylesheet" type="text/css"/>                 
         <title>Articles</title>       
     </head>
         <body>

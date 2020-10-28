@@ -1,0 +1,76 @@
+form label, .fat, .fat-send {
+    -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+}
+
+.group-form {
+    position: relative;
+    padding: 10px 0;
+    margin: 0 auto;max-width: 1700px;
+}
+.group-form:first-of-type {padding-top: 40;}
+.group-form:last-of-type {padding-bottom: 0;}
+
+.fat {
+    border: 1px solid #1d2027;
+    background-color: #fff;
+    width: 100%;
+    position: relative; z-index: 1;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    color: #272a33;
+    line-height: 0;
+    font-size: 1em;
+}
+.fat:focus, .fat:valid {
+    background-color: #fff;
+    color: #000;
+    margin-top: 30px;
+}
+.fat:focus ~ label {
+    -webkit-transform: translate(0, -40px);
+    transform: translate(0, -40px);
+    color: #000;
+}
+.fat:valid ~ label {
+    -webkit-transform: translate(0, -40px);
+    transform: translate(0, -40px);
+    color: #000;
+}
+
+.fat.error {
+    border-color: #e74c3c;
+}
+
+.fat-send {
+    border: 1px solid #1d2027;
+    background-color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 15px 28px;
+    color:#000;
+    line-height: 0;
+    font-size: 1em;
+}
+.fat-send:hover {
+    background-color: #1d2027;
+    color:#fff;
+}
+
+label {
+    transform-origin: left center;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: block;
+    position: absolute;
+    margin-top: -34px;
+    z-index: 2;
+    pointer-events: none;
+    color: #000;
+    line-height: 0;
+    font-size: 1.25em;
+}

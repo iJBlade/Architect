@@ -1,6 +1,6 @@
 <footer role="contentinfo" aria-label="Footer">
     <div>
-        <p>@Tous droit réservés</p>
+        <p><a href="login.php">@</a>Tous droit réservés</p>
     </div>
     <div>
       <a href="#" >Facebook</a>

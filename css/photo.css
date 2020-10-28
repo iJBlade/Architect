@@ -1,10 +1,18 @@
 .wrapper {
-    width: 100%;
-    margin: 0 auto;
-    height: 208px;
-    margin-top: 40px;
-    position: relative;        
+  position: absolute;
+  top: 16%;     
+  left:14%;   
   }
+  .wrap {
+    position: absolute;
+    top: 16%;    
+    left:44%    
+    }
+    .wraper {
+      position: absolute;
+      top: 16%;
+      left:74%;        
+      }
   .picture {
       -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
       -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -25,7 +33,7 @@
   .picture img {
     height: 100%;
     display: block;
-  }
+  } 
   .picture form {
     position: absolute;
     top: 100%;

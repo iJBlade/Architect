@@ -1,8 +1,8 @@
 <form method="POST" id="titre" style="display: none;" >
-    <input name="titre" value="">
-    <input type="submit" name="form_modif" value="Modifier">
+    <input type='text' name="titre" value="" id="Update_titre">
+    <input type="submit" name="form_modif" value="Modifier" id="Up_sub">
 </form>
-<div id="message"></div>
+<div id="message"></div> 
 
 <script>
 /* modification*/ 

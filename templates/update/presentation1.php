@@ -1,6 +1,6 @@
 <form method="POST" id="presentation1" style="display: none;" >
-    <textarea name="presentation1" value="" required></textarea>
-    <input type="submit" name="presentation1" value="Modifier">
+    <textarea name="presentation1" value="" id="Update_textarea" required></textarea><br>
+    <input type="submit" name="presentation1" id="Up_sub" value="Modifier">
 </form>
 <div id="messages"></div>
 

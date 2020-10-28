@@ -255,7 +255,7 @@ class produit{
         // Retour : true si réussi, false sinon 
         
         global $bdd;
-        $sql = "UPDATE `produit` SET `titre` = :titre, `categorie` = :categorie, `statut` = :statut, `contenu` =:contenu, `contenu2` =:contenu2, `prix` =:prix, `tva` =:tva, `stock` =:tva WHERE produit.id = :id";
+        $sql = "UPDATE `produit` SET `titre` = :titre, `categorie` = :categorie, `statut` = :statut, `contenu` =:contenu, `contenu2` =:contenu2, `final_prix` =:final_prix WHERE produit.id = :id";
         $req = $bdd->prepare($sql);
         if ($req->execute( [    ":id" => $this->id,
                                 ":titre" => $this->titre,
@@ -263,9 +263,7 @@ class produit{
                                 ":statut" => $this->statut,
                                 ":contenu"=> $this->contenu,
                                 ":contenu2"=> $this->contenu2,
-                                ":prix"=> $this->prix,
-                                ":tva" => $this->tva,
-                                ":stock" => $this->stock] ) === false) {
+                                ":final_prix" => $this->final_prix]) === false) {
             echo "Erreur requête : $sql";
             return false;
         }else{

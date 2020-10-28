@@ -1,9 +1,9 @@
 <form method="POST" id="profil_title" action="" style="display: none;" >
-    <input type="text" name="titre" required></input>
-    <input type="submit" name="modifier_titre" value="Modifier">
+    <input type="text" name="titre" id="Update_titre" required></input><br>
+    <input type="submit" name="modifier_titre" id="Up_sub" value="Modifier">
 </form>
 <div id="message"></div>
-
+ 
 <script>
 
 $(function(){

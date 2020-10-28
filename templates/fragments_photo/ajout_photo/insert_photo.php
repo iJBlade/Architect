@@ -2,7 +2,7 @@
     // Fragments pour AJOUTER des photos 
 
 ?>
-<form name="" method="POST" action="" enctype="multipart/form-data">
+<form name="" method="POST" action="" enctype="multipart/form-data" >
     <input type="file" name="photo"><br>
     <input type="hidden" name="id" value="<?php if(isset($_GET["id"])){echo $article->getId();}else{ echo $produit->getId();}?>" > 
     <input type="submit" name="Ajouter" value="Ajouter">

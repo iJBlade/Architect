@@ -1,0 +1,143 @@
+a{
+    text-decoration:none;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: 700;
+    padding-left: 9px;
+    cursor:pointer;
+
+}
+a{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+    cursor:pointer;
+}
+
+a:hover::after{
+    width: 100%;
+    cursor:pointer;
+
+}
+#Up{
+    font-size:22px;
+    border: 1px solid black;
+    padding: 40px 0px;
+    margin : 40px 0px;
+}
+h1{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#Up_sub{
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+#Up_sub:hover{
+    background: black;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    color:white;
+}
+#Update_textarea{
+    width: 1000px;
+    height: 100px;
+}
+#Update_titre{
+    width: 300px;
+    height: 50px;
+}
+#Update_prix{
+    width:300px;
+    height:50px;
+}
+#b01,#b1-1,#b2-1,#b3-1{
+    font-size: 20px; 
+    border-radius: 13px; 
+    background-color: red; 
+    color: white; 
+    display: none;
+    position: relative;
+    top: 10%;
+    right: -46%;
+    width: 29px;
+    border: 1px solid red; 
+    cursor:pointer;
+}
+#bt-1{
+    font-size: 20px; 
+    border-radius: 13px; 
+    background-color: red; 
+    color: white; 
+    display: none;
+    position: relative;
+    top: 10%;
+    right: -10%;
+    width: 29px;
+    border: 1px solid red; 
+    cursor:pointer;
+}
+#b-p1,#b-p02{
+    font-size: 20px; 
+    border-radius: 13px; 
+    background-color: red; 
+    color: white; 
+    display: none;
+    position: relative;
+    top: 35%;
+    right: -38%;
+    width: 29px;
+    border: 1px solid red; 
+    cursor:pointer;
+}
+#passwordClose{
+    font-size: 20px; 
+    border-radius: 13px; 
+    background-color: red; 
+    color: white; 
+    display: none;
+    position: relative;
+    top: 35%;
+    right: -10%;
+    width: 29px;
+    border: 1px solid red; 
+    cursor:pointer; 
+    display: none;   
+}
+
+#ttc{
+    font-size:15px;
+    color:grey;
+}
+
+#dpp1{
+    margin:113px;
+}
+#dpp2{
+    margin:113px;
+}
+
+#p_p{
+    font-size:20px;
+    padding:10px;
+    text-align: justify;
+}
+#password{
+    float: right;
+    margin: 0px 25px;
+}
