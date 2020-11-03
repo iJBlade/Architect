@@ -34,9 +34,13 @@
                                 <div id="dpp1">
                                     <p id="p_p"><?= nl2br($user->getPresentation1())?></p>
                                     <?php if(estConnecte()){ ?>
-                                    <a href="#" id="b-p">Modifier le premier contenu de ma présentation</a>
+                                    <a id="b-p">Modifier le premier contenu de ma présentation</a>
                                     <button href="#" id="b-p1" style="display: none;">X</button>
-                                    <?php include "templates/update/presentation1.php";}else{} ?>            
+                                    <a id="password">Modifier mon mot de passe </a>
+                                    <button href="#" id="passwordClose" style="display: none;">X</button>
+                                    <?php include "templates/update/presentation1.php";
+                                          include "templates/fragments/update_password.php";  
+                                        }else{} ?>            
                                 </div>
                             </div>
                             <div style="display:none; height:800px; width:1400px;position: absolute;left: 100%;" id="yell">

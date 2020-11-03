@@ -5,7 +5,7 @@
 <div id="header">	
 	<ul>
         <li><a href="home.php">BLOG</a></li>
-        <li><a href="shop.php">SHOP</a></li>
+        <li><a href="test.php">SHOP</a></li>
         <li><a href="panier.php">PANIER</a></li>                                            
     </ul>		
 </div>

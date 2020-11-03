@@ -1,5 +1,4 @@
 <link href="css/test.css" rel='stylesheet' type='text/css'>
-
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 <link href="css/header.css" rel='stylesheet' type='text/css'>
 <link href="css/footer_blog.css" rel='stylesheet' type='text/css'>
@@ -8,30 +7,33 @@
 
 
 <div id="wrapper">
-<div class="cart-icon-top">
-</div>
-
+<?php // C'est le logo panier frabriqué manuellement   ?>    
+<div class="cart-icon-top"></div>
 <div class="cart-icon-bottom"></div>
+<?php /* ********************************************************************* */ ?>
 
+
+<?php // C'est le lien panier qui apparait lorsqu'on ajoute un article au panier  ?>
 <div id="checkout">
 	<a href="panier.php" style="text-decoration:none;color:gray">PANIER</a>
 </div>
+<?php // fin  ?>
 
+<?php // C'est le panier ?>
 <div id="sidebar">
     <!-- JE TRAVAILLE ICI POUR LE PANIER -->
     <h3>CART</h3>
-    
-
     <div id="cart">
         <span class="empty">Aucun article dans le panier</span>               
     </div>
 
 
 <!-- LE TRAVAIL SE TERMINE ICI  -->
+<?php // C'est le lien panier qui apparait lorsqu'on ajoute un article au panier  ?>
     <h3>CATEGORIES</h3>
     <div class="checklist categories">
     	<ul>
-        	<li><a href=""><span></span>Categorie 1 </a></li>
+        	<li><a href=""><span></span>Categorie 1</a></li>
             <li><a href=""><span></span>Categorie 1</a></li>
             <li><a href=""><span></span>Categorie 1</a></li>
             <li><a href=""><span></span>Categorie 1</a></li>

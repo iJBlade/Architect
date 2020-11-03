@@ -1,96 +1,47 @@
 <link href="css/test.css" rel='stylesheet' type='text/css'>
-
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link href="css/header.css" rel='stylesheet' type='text/css'>
+<link href="css/footer_blog.css" rel='stylesheet' type='text/css'>
+<?php include "templates/fragments/header_shop.php"?>
+<main style="padding-top:92px">
+
+
 <div id="wrapper">
-<div class="cart-icon-top">
-</div>
-
+<?php // C'est le logo panier frabriqué manuellement   ?>    
+<div class="cart-icon-top"></div>
 <div class="cart-icon-bottom"></div>
+<?php /* ********************************************************************* */ ?>
 
+
+<?php // C'est le lien panier qui apparait lorsqu'on ajoute un article au panier  ?>
 <div id="checkout">
-	<a href="panier.php" style="text-decoration:none;color:#5ff7d2">PANIER</a>
+	<a href="panier.php" style="text-decoration:none;color:gray">PANIER</a>
 </div>
+<?php // fin  ?>
 
-<div id="info">
-<p>    Follow me on <a href="https://dribbble.com/virgilpana" style="color:#ea4c89" target="_blank">Instagram</a> | <a style="color:#2aa9e0" href="https://twitter.com/virgil_pana" target="_blank">Twitter</a></p>
-</div>
-
-<div id="header">	
-	<ul>
-        <li><a href="home.php">BLOG</a></li>
-        <li><a href="shop.php">SHOP</a></li>
-        <li><a href="panier.php">PANIER</a></li>                                            
-    </ul>		
-</div>
-
+<?php // C'est le panier ?>
 <div id="sidebar">
     <!-- JE TRAVAILLE ICI POUR LE PANIER -->
     <h3>CART</h3>   
  <?php   if (creationPanier()){
-   $nbArticles=count($_SESSION['panier']['titre']);
-if ($nbArticles <= 0){ ?>
-   <div id="cart">
-      <span class="empty">Aucun article dans le panier </span>               
-  </div>
-<?php }else{
-   for ($i=0 ;$i < $nbArticles ; $i++){ ?>
-       
-       <div id="test"></div>
-<?php } 
-}
+         $nbArticles=count($_SESSION['panier']['titre']);
+                if ($nbArticles <= 0){ ?>
+                    <div id="cart">
+                        <span class="empty">Aucun article dans le panier </span>               
+                    </div>
+                <?php }else{ ?>
+                        <tr>
+                           <td>Libellé</td>
+                           <td style="float:right;">Quantité</td>
+                        </tr>  
+                    
+                <?php for ($i=0 ;$i < $nbArticles ; $i++){ ?>
+                    <div style="padding-top:15px"><?= htmlspecialchars($_SESSION['panier']['titre'][$i]) ?> &nbsp; <?= htmlspecialchars($_SESSION['panier']['qteProduit'][$i]) ?></div>
+                 <?php } 
+                }
 } ?>
 
-
-<!-- LE TRAVAIL SE TERMINE ICI  -->
-    <h3>CATEGORIES</h3>
-    <div class="checklist categories">
-    	<ul>
-        	<li><a href=""><span></span>Categorie 1 </a></li>
-            <li><a href=""><span></span>Categorie 1</a></li>
-            <li><a href=""><span></span>Categorie 1</a></li>
-            <li><a href=""><span></span>Categorie 1</a></li>
-            <li><a href=""><span></span>Categorie 1</a></li>
-            <li><a href=""><span></span>Categorie 1</a></li>
-            <li><a href=""><span></span>Categorie 1</a></li>
-            <li><a href=""><span></span>Categorie 1</a></li>
-            <li><a href=""><span></span>Categorie 1</a></li>
-            <li><a href=""><span></span>Categorie 1</a></li>
-        </ul>
-    </div>
-    
-    <h3>COLORS</h3>
-    <div class="checklist colors">
-    	<ul>
-        	<li><a href=""><span></span>Beige</a></li>
-            <li><a href=""><span style="background:#222"></span>Black</a></li>
-            <li><a href=""><span style="background:#6e8cd5"></span>Blue</a></li>
-            <li><a href=""><span style="background:#f56060"></span>Brown</a></li>
-            <li><a href=""><span style="background:#44c28d"></span>Green</a></li>
-        </ul>
-        
-        <ul>
-        	<li><a href=""><span style="background:#999"></span>Grey</a></li>
-            <li><a href=""><span style="background:#f79858"></span>Orange</a></li>
-            <li><a href=""><span style="background:#b27ef8"></span>Purple</a></li>
-            <li><a href=""><span style="background:#f56060"></span>Red</a></li>
-            <li><a href=""><span style="background:#fff;border: 1px solid #e8e9eb;width:13px;height:13px;"></span>White</a></li>
-        </ul>        
-    </div>
-    
-    <h3>SIZES</h3>
-    <div class="checklist sizes">
-    	<ul>
-        	<li><a href=""><span></span>XS</a></li>
-            <li><a href=""><span></span>S</a></li>
-            <li><a href=""><span></span>M</a></li>
-        </ul>
-        
-        <ul>
-        	<li><a href=""><span></span>L</a></li>
-            <li><a href=""><span></span>XL</a></li>
-            <li><a href=""><span></span>XXL</a></li>
-        </ul>        
-    </div>
+<?php // C'est le lien panier qui apparait lorsqu'on ajoute un article au panier  ?>
     
 
 </div>
@@ -149,10 +100,7 @@ if ($nbArticles <= 0){ ?>
                 <img src="photoproduit1/<?= htmlentities($produit->id)?>.jpg" alt=""/>
                 <div class="image_overlay"></div>
                 
-                <div class="add_to_cart">               
-                
-                <a href="#?action=ajout&amp;l=<?php echo urlencode(str_replace("'","", $produit->titre));?>&amp;q=1&amp;p=<?php echo urlencode($produit->final_prix);?>" class="aCard">AJOUTER AU PANIER</a></div>                
-                
+                <div class="add_to_cart"><a href="panier.php?action=ajout&amp;l=<?php echo $produit->titre;?>&amp;q=1&amp;p=<?php echo $produit->final_prix;?>" class="aCard">AJOUTER AU PANIER</a></div>                
                 <div class="view_gallery">PHOTO</div>                 
                 <div class="stats">        	
                     <div class="stats-container">
@@ -207,11 +155,13 @@ if ($nbArticles <= 0){ ?>
     <?php } ?>    
 <!-- fin d'un seul article avec possibilité de double vision en 3x3x3 et 2x2-->    
    
+   
 </div>
 </div>
+</main>
+<?php include "templates/fragments/footer_blog.php" ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-
-
-
-
+<script src="js/shop.js" type="text/javascript"></script>
+<script src="js/shopping.js" type="text/javascript"></script>  
+<script src="js/header.js" type="text/javascript"></script>
+<script src="js/all.js" type="text/javascript"></script>

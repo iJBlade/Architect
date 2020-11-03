@@ -20,7 +20,7 @@
 
             <p id="p_anim"><span id="anim">Connexion</span></p>
 
-            <form method="POST" action="spacemember.php">
+            <form method="POST" action="dashboard.php">
                 <div class="group-form">
                     <input type="email" name="email" class="fat" id="email" required>
                     <label>Email</label>
@@ -30,7 +30,7 @@
                     <label>Mot de passe</label>
                 </div>
                 <div class="group-form">
-                    <button type="submit" class="fat-send" id="send-connexion">Connexion</button>
+                    <button type="submit" class="fat-send" id="send-connexion" name="Connexion">Connexion</button>
                     <a href="reset.php" class="forgot-password">Mot de passe oublié ?</a>
                 </div>
                 <div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
       <head>
-      <link href="css/test.css" rel='stylesheet' type='text/css'>
+         <link href="css/test.css" rel='stylesheet' type='text/css'>
          <title>Votre panier</title>
          <script src="https://www.paypalobjects.com/api/checkout.js"></script>
          <meta charset="UTF-8">
@@ -62,7 +62,7 @@
                </div>
                <div>
                   <?php // bouton pour payer la commande ?>
-                  <?php include'templates/fragments/paypal_button.php'?>
+                  <?php //include 'templates/fragments/paypal_button.php'?>
                </div>
             </main>
          </body>
