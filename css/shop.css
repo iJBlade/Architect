@@ -2,7 +2,7 @@
 ---------------------------------------------------------------------- */
 * { margin: 0px; padding: 0px; }
 body {
-	font-family: "Open Sans", sans-serif; 
+	/*font-family: "Open Sans", sans-serif; 
 	/*overflow:hidden;*/	
 }
 .more{
@@ -15,7 +15,14 @@ body {
     text-decoration:none;
     color:#fff;
 }
+.aCard2{
+    text-decoration:none;
+    color:#000;
+}
 .aCard:hover{
+    color: gray;
+}
+.aCard2:hover{
     color: gray;
 }
 #wrapper{
@@ -343,7 +350,7 @@ div.large .make3D{
 .stats-container{
 	background:#fff;	
 	position:absolute;
-	top:382px;
+	top:393px;
 	left:0;
 	width: 252px;
 	height: 300px;
@@ -411,7 +418,7 @@ div.large .make3D{
 	top:80px;
 	left:50%;
 	width:152px;
-	font-size:15px;
+	font-size:14px;
 	margin-left:-78px;
 	border:2px solid #fff;
 	color:#fff;	
@@ -750,7 +757,7 @@ body.MakeFloatingCart div.floating-cart.moveToCart{
 		 -o-transition: all 200ms ease-out;
  		    transition: all 200ms ease-out;
 }
-div.cart-icon-top{
+div.cart-icon-top{ 
 	position:absolute;
 	background:#fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/cart.png") 0 -3px no-repeat;
 	margin:0;
@@ -919,6 +926,7 @@ div.sku strong{
 	  border: 3px solid #000;
 	  font-size: 17px;
 	  background: #fff;
+	  text-decoration: none;
 	  text-transform: uppercase;
 	  font-weight: 700;
 	  padding: 10px;

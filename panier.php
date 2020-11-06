@@ -14,9 +14,11 @@ if($action !== null)
    $l = (isset($_POST['l'])? $_POST['l']:  (isset($_GET['l'])? $_GET['l']:null )) ;
    $p = (isset($_POST['p'])? $_POST['p']:  (isset($_GET['p'])? $_GET['p']:null )) ;
    $q = (isset($_POST['q'])? $_POST['q']:  (isset($_GET['q'])? $_GET['q']:null )) ;
+   $f = (isset($_POST['f'])? $_POST['f']:  (isset($_GET['f'])? $_GET['f']:null )) ;
 
    //Suppression des espaces verticaux
    $l = preg_replace('#\v#', '',$l);
+   $f = preg_replace('#\v#', '',$f);
    //On vérifie que $p est un float
    $p = floatval($p);
 
@@ -37,7 +39,7 @@ if($action !== null)
 if (!$erreur){
    switch($action){
       Case "ajout":
-         ajouterArticle($l,$q,$p);
+         ajouterArticle($l,$q,$p,$f);
          break;
 
       Case "suppression":

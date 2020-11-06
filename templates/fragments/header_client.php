@@ -6,11 +6,9 @@
             <span id="3" class="line"></span>
         </div>
 
-        <img src="photohome/logo.png" style="position: absolute;left: 45%;">
+        <img src="admin/home.png" style="position: absolute;left: 45%;width: 67px;">
+        <img src="admin/ecrit.png" style="position: absolute;left: 48.5%;top: 8px;width: 163px;">
 
-        <div>
-            <a href="#">Example</a>
-        </div>
 
     </div>
 
@@ -18,7 +16,7 @@
         <div>
             <ul style="background-color: white; width:299px">
                 <li><a href="home.php">Home</a></li><br>
-                <li><a href="all.php">Portfolio</a></li>
+                <li><a href="portfolio.php">Portfolio</a></li>
                 <li><a href="presentation.php">About</a></li>
                 <li><a href="shop.php">Shop</a></li>
             </ul>

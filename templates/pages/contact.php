@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </main>
-            <?php  include "templates/fragments/footer_blog.php"?>                    
+            <?php  include "templates/fragments/footer.php"?>                    
         </body>
 </html>
 <script>

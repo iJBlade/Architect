@@ -215,7 +215,7 @@
   </div>
 
 </section>
-<?php include "templates/fragments/footer_blog.php" ?>
+<?php include "templates/fragments/footer.php" ?>
 <!-- Quickbeam cart-->
 
 <div id="quick-cart" quickbeam="cart">

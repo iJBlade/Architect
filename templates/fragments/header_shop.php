@@ -1,11 +1,26 @@
-<div id="info">
-<p>    Follow me on <a href="https://dribbble.com/virgilpana" style="color:#ea4c89" target="_blank">Instagram</a> | <a style="color:#2aa9e0" href="https://twitter.com/virgil_pana" target="_blank">Twitter</a></p>
-</div>
+<header>
+    <div>
+        <div id="line">
+            <span id="1" class="line"></span>
+            <span id="2" class="line"></span>
+            <span id="3" class="line"></span>
+        </div>
 
-<div id="header">	
-	<ul>
-        <li><a href="home.php">BLOG</a></li>
-        <li><a href="test.php">SHOP</a></li>
-        <li><a href="panier.php">PANIER</a></li>                                            
-    </ul>		
-</div>
+        <img src="admin/home.png" style="position: absolute;left: 45%;width: 67px;">
+        <img src="admin/ecrit.png" style="position: absolute;left: 48.5%;top: 8px;width: 163px;">
+
+
+    </div>
+
+    <nav id="nav_list" style="width:1900px;">
+        <div>
+            <ul style="background-color: white; width:299px">
+                <li><a href="home.php" id="aA">BLOG</a></li><br>
+                <li><a href="shop.php" id="aA">Shop</a></li>
+                <li><a href="panier.php" id="aA">Panier</a></li>
+
+            </ul>
+            <div style="width:1700px;height:1200px;background-color:rgba(51,51,51,0.71); visibility:visible;opacity:1;"></div>
+        </div>        
+    </nav>
+</header>

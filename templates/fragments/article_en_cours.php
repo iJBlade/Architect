@@ -15,7 +15,7 @@
                             <img src="admin/encours.png">
                             <figcaption>
                                 <h3><?= htmlentities($article->getTitre())?></h3>
-                            </figcaption><a href="dashboard_offline.php?id=<?=$article->getId()?>"></a>
+                            </figcaption><a href="dashboard_offline.php?id=<?=$article->getId()?>" id="aI"></a>
                         </figure>               
         <?php } ?>                
-</div>  
+</div>   

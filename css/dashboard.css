@@ -19,10 +19,41 @@
     width: 0;
     height: 2px;
     background: #000;
-    transition: width .3s;
+    transition: width .3s; 
 }
 
 #hors_ligne:hover::after,#en_ligne:hover::after,#article:hover::after,#off:hover::after,#on:hover::after,#produit:hover::after {
+    width: 100%;
+
+}
+ 
+/*animation trait*/
+
+#aI{
+    text-decoration:none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000;
+    font-weight: 700;
+
+}
+#aI {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+#aI::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s; 
+}
+
+#aI:hover::after{
     width: 100%;
 
 }

@@ -1,8 +1,8 @@
-<link href="css/test.css" rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link href="css/shop.css" rel='stylesheet' type='text/css'>
+
 <link href="css/header.css" rel='stylesheet' type='text/css'>
 <link href="css/footer_blog.css" rel='stylesheet' type='text/css'>
-<?php include "templates/fragments/header.php"?>
+<?php include "templates/fragments/header_shop.php"?>
 <main style="padding-top:92px">
 
 
@@ -22,15 +22,37 @@
 <?php // C'est le panier ?>
 <div id="sidebar">
     <!-- JE TRAVAILLE ICI POUR LE PANIER -->
-    <h3>CART</h3>
-    <div id="cart">
-        <span class="empty">Aucun article dans le panier</span>               
-    </div>
+    <h3>CART</h3>   
+                    <div id="carte">
+                        <span class="ok"></span>                   
+                    </div>
+ <?php   if (creationPanier()){
+         $nbArticles=count($_SESSION['panier']['titre']);
+                if ($nbArticles <= 0){ ?>
+                    <div id="cart">
+                        <span class="empty">Aucun article dans le panier </span>
+                        <span class="ok"></span>                   
+                    </div>
+                <?php }else{ 
+                    
+                    for ($i=0 ;$i < $nbArticles ; $i++){ ?>
+                    
+                    
+                    <div class='cart-item'>
+                        <div class='img-wrap'>
+                            <img src='photoproduit1/<?= htmlspecialchars($_SESSION['panier']['id_image'][$i]) ?>.jpg' alt='' />
+                        </div>
+                        <span><?= htmlspecialchars($_SESSION['panier']['titre'][$i]) ?></span>
+                        <strong><?= htmlspecialchars($_SESSION['panier']['prixProduit'][$i]) ?> €</strong>
+                        <div class='cart-item-border'></div>
+                        <div class='delete-item'></div>
+                    </div>
+                 <?php } 
+                }
+} ?>
 
-
-<!-- LE TRAVAIL SE TERMINE ICI  -->
 <?php // C'est le lien panier qui apparait lorsqu'on ajoute un article au panier  ?>
-    <h3>CATEGORIES</h3>
+<h3>CATEGORIES</h3>
     <div class="checklist categories">
     	<ul>
         	<li><a href=""><span></span>Categorie 1</a></li>
@@ -43,7 +65,7 @@
             <li><a href=""><span></span>Categorie 1</a></li>
             <li><a href=""><span></span>Categorie 1</a></li>
             <li><a href=""><span></span>Categorie 1</a></li>
-        </ul>
+        </ul> 
     </div>
     
     <h3>COLORS</h3>
@@ -78,8 +100,7 @@
             <li><a href=""><span></span>XL</a></li>
             <li><a href=""><span></span>XXL</a></li>
         </ul>        
-    </div>
-    
+    </div>    
 
 </div>
 
@@ -126,18 +147,16 @@
                 <span>L</span>
                 <span>XL</span>
                 <span>XXL</span>
-            </div>
-            
-            <button class="add-cart-large">Ajouter au panier</button>                          
-                         
+            </div>                      
+            <a href="shopping.php?id=<?php echo $produit->id;?>" class="more" style="/*! margin-top: 69px; *//*! width: 100%; */position: absolute;bottom: 12%;left: 37%;">En savoir plus</a>           
         </div>
         <div class="make3D">
             <div class="product-front">
                 <div class="shadow"></div>
-                <img src="photoproduit1/<?= htmlentities($produit->id)?>.jpg" alt=""/>
+                <img src="photoproduit1/<?= htmlentities($produit->id)?>.jpg" alt="<?php echo $produit->id; ?>" />
                 <div class="image_overlay"></div>
                 
-                <div class="add_to_cart"><a href="#?action=ajout&amp;l=<?php echo $produit->titre;?>&amp;q=1&amp;p=<?php echo $produit->final_prix;?>" class="aCard">AJOUTER AU PANIER</a></div>                
+                <div class="add_to_cart"><a class="aCard">AJOUTER AU PANIER</a></div>                
                 <div class="view_gallery">PHOTO</div>                 
                 <div class="stats">        	
                     <div class="stats-container">
@@ -153,10 +172,8 @@
                             <div class="c-blue"><span></span></div>
                             <div class="c-red"><span></span></div>
                             <div class="c-white"><span></span></div>
-                            <div class="c-green"><span></span></div>
-                            
+                            <div class="c-green"><span></span></div>                           
                         </div><br>
-                        <a href="shopping.php?id=<?php echo $produit->id;?>" class="more">En savoir plus</a>
                     </div>                       
                     </div>                         
                 </div>
@@ -166,9 +183,9 @@
                 <div class="shadow"></div>
                 <div class="carousel">
                     <ul class="carousel-container">
-                        <li><img src="photoproduit1/<?= htmlentities($produit->id)?>.jpg" alt=""/></li>
-                        <li><img src="photoproduit2/<?= htmlentities($produit->id)?>.jpg" alt=""/></li>
-                        <li><img src="photoproduit3/<?= htmlentities($produit->id)?>.jpg" alt=""/></li>
+                        <li><img src="photoproduit1/<?= htmlentities($produit->id)?>.jpg" /></li>
+                        <li><img src="photoproduit2/<?= htmlentities($produit->id)?>.jpg" /></li>
+                        <li><img src="photoproduit3/<?= htmlentities($produit->id)?>.jpg" /></li>
                     </ul>
                     <div class="arrows-perspective">
                         <div class="carouselPrev">
@@ -196,7 +213,7 @@
 </div>
 </div>
 </main>
-<?php include "templates/fragments/footer_blog.php" ?>
+<?php include "templates/fragments/footer.php" ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/shop.js" type="text/javascript"></script>
 <script src="js/shopping.js" type="text/javascript"></script>  

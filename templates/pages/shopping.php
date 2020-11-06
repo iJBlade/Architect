@@ -146,7 +146,7 @@
                   <option  data-sku="" value="7924830021">
                     XXL / Blue - $950.00 USD
                   </option>
-                  <option  data-sku="" value="7924994885">
+                  <option  data-sku="" value="7924994885"> 
                     XXL / Red - $850.00 USD
                   </option>
                 </select>
@@ -160,7 +160,7 @@
                       <span class="btn plus" data-id="2721888517"></span>
                     </div>
                     <div id="AddToCart" quickbeam="add-to-cart">
-                      <span id="AddToCartText"><a href="panier.php?action=ajout&amp;l=<?php echo $produit->titre;?>&amp;q=1&amp;p=<?php echo $produit->final_prix;?>" style="color:white; text-decoration:none;">Ajouter au panier</a></span>
+                      <span id="AddToCartText"><a href="panier.php?action=ajout&amp;l=<?php echo $produit->titre;?>&amp;q=1&amp;p=<?php echo $produit->final_prix;?>&amp;f=<?php echo $produit->id;?>" style="color:white; text-decoration:none;">Ajouter au panier</a></span>
                     </div>
                   </div>
                 </div>

@@ -107,55 +107,13 @@ $(document).ready(function(){
 		makeCarousel(el);
 	});
 	
-	$('.add-cart-large').each(function(i, el){
-		$(el).click(function(){
-			var carousel = $(this).parent().parent().find(".carousel-container");
-			var img = carousel.find('img').eq(carousel.attr("rel"))[0];						
-			var position = $(img).offset();	
-
-			var productName = $(this).parent().find('h4').get(0).innerHTML;	
-			
-			var price = $(this).find("p[name=prix]").val() ;
-			$("body").append('<div class="floating-cart"></div>');		
-			var cart = $('div.floating-cart');		
-			$("<img src='"+img.src+"' class='floating-image-large' />").appendTo(cart);
-			
-			$(cart).css({'top' : position.top + 'px', "left" : position.left + 'px'}).fadeIn("slow").addClass('moveToCart');		
-			setTimeout(function(){$("body").addClass("MakeFloatingCart");}, 800);
-			
-			setTimeout(function(){
-			$('div.floating-cart').remove();
-			$("body").removeClass("MakeFloatingCart");
-
-
-			var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='"+img.src+"' alt='' /></div><span>"+productName+"</span><strong>"+price+"</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";			
-
-			$("#cart .empty").hide();			
-			$("#cart").append(cartItem);
-			$("#checkout").fadeIn(500);
-			
-			$("#cart .cart-item").last()
-				.addClass("flash")
-				.find(".delete-item").click(function(){
-					$(this).parent().fadeOut(300, function(){
-						$(this).remove();
-						if($("#cart .cart-item").size() == 0){
-							$("#cart .empty").fadeIn(500);
-							$("#checkout").fadeOut(500);
-						}
-					})
-				});
- 		    setTimeout(function(){
-				$("#cart .cart-item").last().removeClass("flash");
-			}, 10 );
-			
-		}, 1000);
-			
-			
-		});
-	})
 	
-	/* ----  Image Gallery Carousel   ---- */
+	/* ---------------------------------------------------  Image Gallery Carousel   ------------------------------------------------------ */
+	/**
+	 * Partie ou quand on clique sur la deuxieme vue possible, les images tournent et change de vue en 2x2 
+	 * 
+
+	*/
 	function makeCarousel(el){
 	
 		
@@ -226,40 +184,71 @@ $(document).ready(function(){
 	$('.add_to_cart').click(function(){
 		var productCard = $(this).parent();
 		var position = productCard.offset();
-		var productImage = $(productCard).find('img').get(0).src;
+		var productImage = $(productCard).find('img').get(0).alt;
+		var productImg = $(productCard).find('img').get(0).src;
 		var productName = $(productCard).find('.product_name').get(0).innerHTML;				
 		var price = $(productCard).find('.product_price').get(0).innerHTML ;
+		//alert(price); -> reconnait le prix
+		//alert(productName); -> reconnait les titres
+		//alert(productImage);
+
+		// fonction où on voit l'image décollé et aller dans le panier  
 		$("body").append('<div class="floating-cart"></div>');		
 		var cart = $('div.floating-cart');		
 		productCard.clone().appendTo(cart);
 		$(cart).css({'top' : position.top + 'px', "left" : position.left + 'px'}).fadeIn("slow").addClass('moveToCart');		
 		setTimeout(function(){$("body").addClass("MakeFloatingCart");}, 800);
-		setTimeout(function(){
-			$('div.floating-cart').remove();
-			$("body").removeClass("MakeFloatingCart");
 
-// ici c'est la classe ajouter manuellement 
-			var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='"+productImage+"' alt='' /></div><span>"+productName+"</span><strong>"+price+"</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";			
 
-			$("#cart .empty").hide();			
-			$("#cart").append(cartItem);
-			$("#checkout").fadeIn(500);
-			
-			$("#cart .cart-item").last()
-				.addClass("flash")
-				.find(".delete-item").click(function(){
-					$(this).parent().fadeOut(300, function(){
-						$(this).remove();
-						if($("#cart .cart-item").size() == 0){
-							$("#cart .empty").fadeIn(500);
-							$("#checkout").fadeOut(500);
-						}
-					})
-				});
- 		    setTimeout(function(){
-				$("#cart .cart-item").last().removeClass("flash");
-			}, 10 );
-			
-		}, 1000);
+		/****programme ajax pour ajouter dans le panier les produits clickés */
+			$.ajax({
+				type: "POST",
+				url: "panier.php?action=ajout&amp;",
+				cache: false,
+				async: false,
+				data: {
+					'l': productName  ,
+					'q' : 1,
+					'p': price ,
+					'f': productImage, 
+					},
+				dataType: "html",
+				success:setTimeout(function(){
+					$('div.floating-cart').remove();
+					$("body").removeClass("MakeFloatingCart");
+		
+		// ici c'est la classe ajouter manuellement , son initialisation html pour les données
+					var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='"+productImg+"' alt='' /></div><span>"+productName+"</span><strong>"+price+"</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";					
+					$("#cart .empty").hide(); // div , aucun article dans le panier 			
+					$("#carte .ok").append(cartItem); // div qui fait l'animation de l'article qui va dans le panier
+					$("#checkout").fadeIn(500); // div qui fait apparaitre le lien panier
+		
+		
+		
+		
+					// fonctions pour supprimer les articles dans le panier 
+		
+					
+					$("#cart .cart-item").last().addClass("flash").find(".delete-item").click(function(){
+						$(this).parent().fadeOut(300, function(){
+							$(this).remove();
+							if($("#cart .cart-item").size() == 0){
+								$("#cart .empty").fadeIn(500);
+								$("#checkout").fadeOut(500);
+							}
+						})
+					});
+				 setTimeout(function(){
+					$("#cart .cart-item").last().removeClass("flash");
+				}, 10 );
+					
+					
+					
+					
+				}, 1000) 
+
+			});	
+
 	});
+
 });

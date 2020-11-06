@@ -63,7 +63,7 @@
              
             </div>       
         </main>
-        <?php include "templates/fragments/footer_blog.php" ?>
+        <?php include "templates/fragments/footer.php" ?>
     </body>
         <script src="js/header.js" type="text/javascript"></script>  
         <script src="js/profil.js" type="text/javascript"></script>  

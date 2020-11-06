@@ -1,14 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
       <head>
-         <link href="css/test.css" rel='stylesheet' type='text/css'>
-         <title>Votre panier</title>
-         <script src="https://www.paypalobjects.com/api/checkout.js"></script>
          <meta charset="UTF-8">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+         <script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>           
+         <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+         <link href="css/style.css" rel="stylesheet" type="text/css"/> 
+         <link href="css/header.css" rel="stylesheet" type="text/css"/>  
+         <link href="css/footer_blog.css" rel="stylesheet" type="text/css"/> 
+         <title>Votre panier</title>
       </head>
          <body>
             <?php include 'templates/fragments/header_shop.php' ?>
-            <main>
+            <main style="position: absolute;width: 100%;top: 15%;">
                <div>
                   <form method="post" action="panier.php">
                      <table style="width: 1500px;margin: 0 auto;">
@@ -33,9 +39,9 @@
                            {
                               for ($i=0 ;$i < $nbArticles ; $i++)
                               {
-                                  
+                                 
                                  echo "<tr style='/*! background-color: red; */height: 120px;font-size: 25px;box-shadow: 0px 2px 4px 2px gray;'>";
-                                 echo "<td><img src='admin/celui_la.png' width='44px' style='padding-left:15px;'></td>";
+                                 echo "<td><img src='photoproduit1/".htmlspecialchars($_SESSION['panier']['id_image'][$i]).".jpg' width='150px' height='125px' style='padding-left:15px;margin:12px;'></td>";
                                  echo "<td>".htmlspecialchars($_SESSION['panier']['titre'][$i])."</ td>";
                                  echo "<td><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['panier']['qteProduit'][$i])."\"/></td>";
                                  echo "<td>".htmlspecialchars($_SESSION['panier']['prixProduit'][$i])."€</td>";
@@ -62,8 +68,8 @@
                </div>
                <div>
                   <?php // bouton pour payer la commande ?>
-                  <?php //include 'templates/fragments/paypal_button.php'?>
                </div>
             </main>
          </body>
+         <script src="js/header.js" type="text/javascript"></script>
 </html>

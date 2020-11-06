@@ -7,7 +7,7 @@
                             <img src="photoproduit1/<?= htmlentities($produit->getId())?>.jpg">
                             <figcaption>
                                 <h3><?= htmlentities($produit->getTitre())?></h3>
-                            </figcaption><a href="dashboard_online.php?prod=<?=$produit->getId()?>"></a>
+                            </figcaption><a href="dashboard_online.php?prod=<?=$produit->getId()?>" id="aI"></a>
                         </figure>
                  
     <?php } ?>                 

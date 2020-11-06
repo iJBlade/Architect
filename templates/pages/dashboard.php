@@ -50,7 +50,7 @@
                     <?php include "templates/fragments/create_product.php"?>
                 </div>        
             </main>
-            <?php  include "templates/fragments/footer_blog.php"?>  
+            <?php  include "templates/fragments/footer.php"?>  
             <script src="js/gestion_formulaire.js" type="text/javascript"></script> 
             <script src="js/header.js" type="text/javascript"></script>     
             <script src="js/all.js" type="text/javascript"></script>             

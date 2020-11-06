@@ -26,6 +26,6 @@
       include'templates/pages/update.php';
 
   }else{
-    $message = "Si vous n'êtes pas un(e) administrateur(trice), vous n'êtes pas autorisé a consulter cette page. Si vous pensez qu'il s'agit d'un erreur, contactez le(a) développeur(euse).";
+    $message = "Si vous n'êtes pas un(e) administrateur(trice), vous n'êtes pas autorisé à consulter cette page. Si vous pensez qu'il s'agit d'un erreur, contactez le(a) développeur(euse).";
     include'templates/pages/error.php';
   }

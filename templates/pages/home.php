@@ -20,7 +20,7 @@
                     </div>
                     <section class="container">
                         <h1>Marie<br>Manzano<br>Blog</h1>
-                        <a href="all.php"><button data-hover="⟶"><div>Entrez</div></button></a>
+                        <a href="portfolio.php"><button data-hover="⟶"><div>Entrez</div></button></a>
                     </section>
                 </div>           
         </body>
