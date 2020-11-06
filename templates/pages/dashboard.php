@@ -25,19 +25,16 @@
                 <h1 style="text-align: center;">Tableau de bord</h1>
                 <div style="max-width: 1200px;margin: 0 auto; padding:40px 20px;">
                     <div style="float: left;">
-                        <a href="#" id="hors_ligne">Article hors ligne|</a>
-                        <a href="#" id="en_ligne">Article en ligne|</a>
-                        <a href="#" id="article">Créer un nouvel article</a>
+                        <a  id="hors_ligne">Article hors ligne|</a>
+                        <a  id="en_ligne">Article en ligne|</a>
+                        <a  id="article">Créer un nouvel article</a>
                     </div>
                     <div style="float:right;">
-                        <a href="#" id="off">Produit hors ligne|</a>
-                        <a href="#" id="on">Produit en ligne|</a>
-                        <a href="#" id="produit">Créer un nouveau produit</a>
+                        <a  id="off">Produit hors ligne|</a>
+                        <a  id="on">Produit en ligne|</a>
+                        <a  id="produit">Créer un nouveau produit</a>
                     </div>
                 </div>
-
-
-
 
                 <div style="text-align: center;">
                     <?php include "templates/fragments/compteur.php"?>

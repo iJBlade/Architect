@@ -13,7 +13,9 @@
         <link href="css/footer_blog.css" rel="stylesheet" type="text/css"/> 
         <link href="css/all.css" rel="stylesheet" type="text/css"/> 
         <link href="css/update_art.css" rel="stylesheet" type="text/css"/>                           
-        <title>Modification</title>       
+        <?php  foreach ($lignes as $article){ ?>                          
+        <title>Modification - <?= htmlentities($article->getTitre()) ?></title>      
+        <?php } ?>       
     </head>
         <body>
             <?php include 'templates/fragments/header.php'?>
@@ -51,28 +53,28 @@
                             <div style="position: absolute;top: 70%;width: 1623px;margin : 0 auto;left: 9%;">
                                 <div>
                                     <div>
-                                        <p id="Up"><?= htmlentities($article->getContenu())?><a id="b1">Modifier le contenu n°1</a></p><!-- titre  contenu-->   
+                                        <p id="Up"><?= nl2br(htmlentities($article->getContenu()))?><a id="b1">Modifier le contenu n°1</a></p><!-- titre  contenu-->   
                                         <button id="b1-1">X</button>
                                     </div>                   
                                     <?php include "templates/update/contenu1.php"?>                           
                                 </div>    
                                 <div>
                                     <div>
-                                        <p id="Up"><?= htmlentities($article->getContenu2())?><a id="b2">Modifier le contenu n°2</a></p><!-- titre  contenu-->                             
+                                        <p id="Up"><?= nl2br(htmlentities($article->getContenu2()))?><a id="b2">Modifier le contenu n°2</a></p><!-- titre  contenu-->                             
                                         <button id="b2-1">X</button>
                                     </div>                   
                                     <?php include "templates/update/contenu2.php"?>                           
                                 </div>                     
                                 <div>
                                     <div>
-                                        <p id="Up"><?= htmlentities($article->getContenu3())?><a id="b3">Modifier le contenu n°3</a></p><!-- titre  contenu-->                                  
+                                        <p id="Up"><?= nl2br(htmlentities($article->getContenu3()))?><a id="b3">Modifier le contenu n°3</a></p><!-- titre  contenu-->                                  
                                         <button id="b3-1" style="display: none;">X</button>
                                     </div>                   
                                     <?php include "templates/update/contenu3.php"?>                           
                                 </div>                       
                                 <div>
                                     <div>
-                                        <p id="Up"><?= htmlentities($article->getContenu4())?><a id="b4">Modifier le contenu n°4</a></p><!-- titre  contenu-->                             
+                                        <p id="Up"><?= nl2br(htmlentities($article->getContenu4()))?><a id="b4">Modifier le contenu n°4</a></p><!-- titre  contenu-->                             
                                         <button id="b4-1" style="display: none;">X</button>
                                     </div>                   
                                     <?php include "templates/update/contenu4.php"?>                           

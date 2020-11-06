@@ -66,7 +66,7 @@ h1{
     width:300px;
     height:50px;
 }
-#b01,#b1-1,#b2-1,#b3-1{
+#b01,#b1-1,#b2-1,#b3-1,#b4-1{
     font-size: 20px; 
     border-radius: 13px; 
     background-color: red; 
@@ -79,23 +79,12 @@ h1{
     border: 1px solid red; 
     cursor:pointer;
 }
-#b3-1{
-    font-size: 20px; 
-    border-radius: 13px; 
-    background-color: red; 
-    color: white; 
-    display: none;
-    position: relative;
-    top: 10%;
-    right: -7%;
-    width: 29px;
-    border: 1px solid red; 
-    cursor:pointer;
-}
+
+
 #b01{
     font-size: 20px; 
     border-radius: 13px; 
-    background-color: red; 
+    background-color: red;  
     color: white; 
     display: none;
     position: relative;

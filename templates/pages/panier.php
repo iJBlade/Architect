@@ -66,10 +66,7 @@
                      </table>
                   </form>
                </div>
-               <div>
-                  <?php // bouton pour payer la commande ?>
-               </div>
             </main>
          </body>
-         <script src="js/header.js" type="text/javascript"></script>
+      <script src="js/header.js" type="text/javascript"></script>
 </html>

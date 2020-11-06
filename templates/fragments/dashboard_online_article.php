@@ -42,9 +42,9 @@
                                 <div id="medium_child2">
                                     <h1><?= htmlentities($article->getTitre())?></h1>
                                     <div id="border"></div>
-                                    <p><?= htmlentities($article->getContenu())?><!-- titre  contenu-->   
-                                    <p><?= htmlentities($article->getContenu2())?><!-- titre  contenu-->   
-                                    <p><?= htmlentities($article->getContenu3())?><!-- titre  contenu-->   
+                                    <p><?= htmlentities($article->getContenu())?></p><!-- titre  contenu-->   
+                                    <p><?= htmlentities($article->getContenu2())?></p><!-- titre  contenu-->   
+                                    <p><?= htmlentities($article->getContenu3())?></p><!-- titre  contenu-->   
                                 </div>                                   
                         </div> 
                         <div id="medium_column_parent2">

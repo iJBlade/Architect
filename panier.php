@@ -1,6 +1,14 @@
 <?php
-include 'lib/init.php';
-session_start();
+/* ******** * Contrôleur pour afficher le panier et le mettre à jour      * ****** */
+/*            Param : - connecte return true else false 
+                      - $l,$p,$q,$f    
+              Retour : affichage / modification du panier         
+              Côté ADMIN
+/* ***************** * Librairie classe et connexion * ********************** */
+   include 'lib/init.php';
+   session_start();
+/****************** * Programmation * *************************************** */ 
+
 
 $erreur = false;
 

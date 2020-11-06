@@ -70,3 +70,16 @@ $(document).ready(function(){
     });
 
 });
+
+// gestion de l'aparition des paragraphes 
+$(function(){
+    $("#desc2").click(function(){//id de la barre de recherche 
+        $("#yell").show("slide", { direction: "left" }, 1000);   
+        $("#black").hide("slide", { direction: "left" }, 1000);
+    });
+    $("#desc1").click(function(){//id de la barre de recherche 
+        $("#black").show("slide", { direction: "left" }, 1000);   
+        $("#yell").hide("slide", { direction: "left" }, 1000);
+    });
+
+});

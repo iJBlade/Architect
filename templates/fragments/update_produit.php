@@ -12,8 +12,10 @@
         <link href="css/photo.css" rel="stylesheet" type="text/css"/>  
         <link href="css/footer_blog.css" rel="stylesheet" type="text/css"/> 
         <link href="css/all.css" rel="stylesheet" type="text/css"/> 
-        <link href="css/update_art.css" rel="stylesheet" type="text/css"/>                           
-        <title>Modification</title>       
+        <link href="css/update_art.css" rel="stylesheet" type="text/css"/> 
+        <?php  foreach ($ligne as $produit){ ?>                          
+        <title>Modification - <?= htmlentities($produit->getTitre()) ?></title>      
+        <?php } ?> 
     </head>
         <body>
             <?php include 'templates/fragments/header.php'?>
@@ -51,17 +53,17 @@
                             <div style="position: absolute;top: 70%;width: 1623px;margin : 0 auto;left: 9%;">
                                 <div>
                                     <div>
-                                        <p id="Up"><?= htmlentities($produit->getContenu())?><a id="b1">Modifier le contenu n°1</a></p><!-- titre  contenu-->   
+                                        <p id="Up"><?= nl2br(htmlentities($produit->getContenu())) ?><a id="b1">Modifier le contenu n°1</a></p><!-- titre  contenu-->   
                                         <button id="b1-1">X</button>
                                     </div>                   
-                                    <?php include "templates/update/contenu1.php"?>                           
+                                    <?php include "templates/update/prod.php"?>                           
                                 </div>    
                                 <div>
                                     <div>
-                                        <p id="Up"><?= htmlentities($produit->getContenu2())?><a id="b2">Modifier le contenu n°2</a></p><!-- titre  contenu-->                             
+                                        <p id="Up"><?= nl2br(htmlentities($produit->getContenu2()))?><a id="b2">Modifier le contenu n°2</a></p><!-- titre  contenu-->                             
                                         <button id="b2-1">X</button>
                                     </div>                   
-                                    <?php include "templates/update/contenu2.php"?>                           
+                                    <?php include "templates/update/prod2.php"?>                           
                                 </div>                     
                                 <div>
                                     <div>
@@ -75,8 +77,7 @@
                                     <a href="online.php?prod=<?=$produit->getId()?>">Mettre ce produit en ligne? </a>
                                     <a href="dashboard_offline.php?prod=<?=$produit->getId()?>">Aperçu?</a>                  
                                 </div>           
-                            </div>
-                                                            
+                            </div>                                                           
                     <?php } ?>
                 </div>
             </main>

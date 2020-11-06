@@ -4,6 +4,7 @@
             <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
             <link href='https://fonts.googleapis.com/css?family=Anton|Passion+One|PT+Sans+Caption' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" href="css/404.css">
+            <title>404-Erreur</title>
         </head>
             <body>
                     <!-- Error Page -->

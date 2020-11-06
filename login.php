@@ -3,9 +3,10 @@
 /*            Param : -  return true else false    
               Côté ADMIN
 /* ***************** * Librairie classe et connexion * ********************** */
-include 'lib/init.php';
-session_start();
+    include 'lib/init.php';
+    session_start();
 /* ************************************************************************** */
-unset($_SESSION['recup_mail']); // vider les adresses mails 
-$user=new admin();
+    unset($_SESSION['recup_mail']); // vider les adresses mails déja enregistrer
+    $user = new admin();
+    
 include'templates/pages/login.php';

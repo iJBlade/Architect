@@ -24,13 +24,13 @@ $(document).ready(function(){
 $(function(){
     $("#contenu2").submit(function(){//id de la barre de recherche    
         contenu2 = $(this).find("textarea[name=contenu2]").val();
-        $.post("update_art.php?id=<?= $article->getId() ?>",{contenu2:contenu2},function(){
+        $.post("update_prod.php?prod=<?= $produit->getId() ?>",{contenu2:contenu2},function(){
             if(contenu2 === ""){
                  $("#message").empty().append("<div>Votre contenu n°2 est vide.</div>");
             }
             if(contenu2 !==""){
                 $("#message").empty().append("<div>Votre contenu n°2 a bien été modifié.</div>");                
-                document.location.href="update.php?id=<?= $article->getId() ?>"; 
+                document.location.href="update.php?prod=<?= $produit->getId() ?>"; 
             }
         });
         return false;

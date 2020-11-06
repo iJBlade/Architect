@@ -11,7 +11,7 @@
         <link href="css/header.css" rel="stylesheet" type="text/css"/>
         <link href="css/co.css" rel="stylesheet" type="text/css"/>  
         <link href="css/footer_blog.css" rel="stylesheet" type="text/css"/>
-        <title>HOME</title>       
+        <title>LOGIN</title>       
     </head> 
     <body>
         <?php include "templates/fragments/header.php" ?>

@@ -1,11 +1,13 @@
 <?php
+/* ******** * Contrôleur pour afficher home pour deconnecte l'admin * ******** */
+/*            Param : deconnecte() -> fonction de la lib/init.php             */
+/*            View = Côté Admin                                               */        
+/* ***************** * Librairie classe et connexion * ********************** */
+    include 'lib/init.php';  
+    session_start();
 
-/* 
- *  Controleur qui sert a apeller la page d'acceuil et déconnecter l'admin 
- */
-include'lib/init.php';
+/****************** * Programmation * *************************************** */ 
 
-session_start();
 deconnecte();
 
 if(estConnecte()){   

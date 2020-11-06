@@ -34,7 +34,7 @@
                     </div>
                     <div id="_4">
                         <a id="close_form">X</a>
-                        <form method="POST" action="spacemember.php">
+                        <form method="POST" action="">
                             <div class="group-form">
                                 <input type="text" name="nom" class="fat"  required>
                                 <label>Nom</label>

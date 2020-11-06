@@ -5,12 +5,14 @@
     letter-spacing: 1px;
     color: #000;
     font-weight: 700;
+    cursor: pointer;
 
 }
 #hors_ligne,#en_ligne,#article,#off,#on,#produit {
     display: inline-block;
     color: #000;
     text-decoration: none;
+    cursor: pointer;
 }
 
 #hors_ligne::after,#en_ligne::after,#article::after,#off::after,#on::after,#produit::after {
@@ -19,11 +21,13 @@
     width: 0;
     height: 2px;
     background: #000;
-    transition: width .3s; 
+    transition: width .3s;
+    cursor: pointer; 
 }
 
 #hors_ligne:hover::after,#en_ligne:hover::after,#article:hover::after,#off:hover::after,#on:hover::after,#produit:hover::after {
     width: 100%;
+    cursor: pointer;
 
 }
  
@@ -36,12 +40,14 @@
     letter-spacing: 2px;
     color: #000;
     font-weight: 700;
+    cursor: pointer;
 
 }
 #aI {
     display: inline-block;
     color: #000;
     text-decoration: none;
+    cursor: pointer;
 }
 
 #aI::after {
@@ -50,10 +56,12 @@
     width: 0;
     height: 2px;
     background: white;
-    transition: width .3s; 
+    transition: width .3s;
+    cursor: pointer; 
 }
 
 #aI:hover::after{
     width: 100%;
+    cursor: pointer;
 
 }
