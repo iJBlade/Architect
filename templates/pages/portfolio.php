@@ -22,7 +22,7 @@
                             <img src="photo1/<?= htmlentities($article->getId())?>.jpg" alt="sample87"/>
                             <figcaption>
                                 <h3><?= htmlentities($article->getTitre())?></h3>
-                            </figcaption><a href="article.php?id=<?=$article->getId()?>"></a>
+                            </figcaption><a href="article.php?id=<?=$article->getId()?>" id="aI"></a>
                         </figure>
                     <?php } ?>
                 </div>

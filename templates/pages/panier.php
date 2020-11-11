@@ -8,6 +8,7 @@
          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>           
          <script src="https://www.paypalobjects.com/api/checkout.js"></script>
          <link href="css/style.css" rel="stylesheet" type="text/css"/> 
+         <link href="css/frag.css" rel="stylesheet" type="text/css"/>
          <link href="css/header.css" rel="stylesheet" type="text/css"/>  
          <link href="css/footer_blog.css" rel="stylesheet" type="text/css"/> 
          <title>Votre panier</title>
@@ -65,8 +66,20 @@
                         ?>
                      </table>
                   </form>
+
+
+                  <div class="svg-wrapper">
+                     <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="shape" height="60" width="320" />
+                     </svg>
+                        <div class="text"><a href="paiement.php?mt=<?php echo MontantGlobal()  ?>" style="text-decoration: none;color: black;" >Paiement</a>
+</div>
+                     </div>
+
+
                </div>
             </main>
          </body>
       <script src="js/header.js" type="text/javascript"></script>
+      <script src="js/frag.js" type="text/javascript"></script>
 </html>
