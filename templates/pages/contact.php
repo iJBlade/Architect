@@ -47,7 +47,7 @@
                                 <textarea type="text" name="message" placeholder="Message" required></textarea>                               
                             </div>
                             <div class="group-form">
-                                <button type="submit" class="fat-send">Envoyer</button>
+                                <button type="submit" class="fat-send" name="mailform">Envoyer</button>
                             </div>
                             <div>
                                 <?php if(isset($erreur)){echo $erreur ; }else{}?>
