@@ -68,13 +68,12 @@
                   </form>
 
 
-                  <div class="svg-wrapper">
+                  <div class="svg-wrapper" style="padding-top:20px;">
                      <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                         <rect class="shape" height="60" width="320" />
                      </svg>
-                        <div class="text"><a href="paiement.php?mt=<?php echo MontantGlobal()  ?>" style="text-decoration: none;color: black;" >Paiement</a>
-</div>
-                     </div>
+                        <div class="text"><a href="paiement.php?mt=<?php echo MontantGlobal()  ?>" style="text-decoration: none;color: black;" >Paiement</a></div>
+                  </div>
 
 
                </div>

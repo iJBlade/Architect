@@ -106,3 +106,37 @@
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
+
+/* ****link **** */
+#aI{
+  text-decoration:none;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+#aI {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#aI::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width .3s;
+  cursor: pointer; 
+}
+
+#aI:hover::after{
+  width: 100%;
+  cursor: pointer;
+
+}

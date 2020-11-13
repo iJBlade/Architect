@@ -13,12 +13,12 @@
 <link href="css/footer_blog.css" rel='stylesheet' type='text/css'>
 <?php include "templates/fragments/header.php"?>
 <main style="padding-top: 85px;">
-<div style="text-align: center;font-weight: 700;color: red;font-size: 14px;text-decoration: none;text-transform: uppercase;letter-spacing: 1px;">
-        <a href="delete.php?prod=<?=$produit->getId()?>" style="color:darkred;">Supprimer ce produit ? </a> 
-        <a href="online.php?prod=<?=$produit->getId()?>" style="color :darkgreen"> Mettre ce produit en ligne ? </a>
-        <a href="update.php?prod=<?=$produit->getId()?>" style="color:darkblue">Modifier ce produit ?</a>                
+<div style="max-width: 730px;margin: 0 auto;">
+        <a href="delete.php?prod=<?=$produit->getId()?>" id="aA">Supprimer ce produit ? </a> 
+        <a href="online.php?prod=<?=$produit->getId()?>" id="aA"> Mettre ce produit en ligne ? </a>
+        <a href="update.php?prod=<?=$produit->getId()?>" id="aA">Modifier ce produit ?</a>                
 </div>  
-<div style="text-align: center;font-weight: 700;color: red;font-size: 14px;text-decoration: none;text-transform: uppercase;letter-spacing: 1px;">
+<div style="text-align: center;font-weight: 700;color: darkgray;font-size: 14px;text-decoration: none;text-transform: uppercase;letter-spacing: 1px;background-color: whitesmoke;">
 
 <h2>Aperçu du produit hors ligne.</h2>
 <p>Note : Cette page est l'aperçu de ce que la(e) visitrice(eur) voit lorsqu'il/elle consulte ce produit</p>

@@ -21,10 +21,11 @@
                 <?php include "templates/fragments/header_shop.php"?>               
                 <main style="padding-top:92px">
                     <div id="wrapper">
-                        <?php // C'est le logo panier frabriqué manuellement   ?>    
-                        <div class="cart-icon-top"></div>
-                        <div class="cart-icon-bottom"></div>
-
+                        <?php // C'est le logo panier frabriqué manuellement   ?>  
+                        <a href="panier.php" style="text-decoration: none;">  
+                            <div class="cart-icon-top"></div>
+                            <div class="cart-icon-bottom"></div>
+                        </a>    
                         <?php // C'est le lien panier qui apparait lorsqu'on ajoute un article au panier  ?>
                         <div id="checkout">
                             <a href="panier.php" style="text-decoration:none;color:gray">PANIER</a>
@@ -33,7 +34,7 @@
                         <?php // C'est le panier ?>
                         <div id="sidebar">
                             <!-- JE TRAVAILLE ICI POUR LE PANIER -->
-                            <h3>CART</h3>   
+                            <a href="panier.php" style="text-decoration: none;"><h3>CART</h3></a>   
                                 <div id="carte">
                                     <span class="ok"></span>                   
                                 </div>
@@ -158,7 +159,7 @@
                                         <span>XL</span>
                                         <span>XXL</span>
                                     </div>                      
-                                    <a href="shopping.php?id=<?php echo $produit->id;?>" class="more" style="/*! margin-top: 69px; *//*! width: 100%; */position: absolute;bottom: 12%;left: 37%;">En savoir plus</a>           
+                                    <a href="shopping.php?id=<?php echo $produit->id;?>" class="more" style="/*! margin-top: 69px; *//*! width: 100%; */position: absolute;bottom: 12%;left: 37%;" id="aA">En savoir plus</a>           
                                 </div>
                                 <div class="make3D">
                                     <div class="product-front">

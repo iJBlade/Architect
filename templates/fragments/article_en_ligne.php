@@ -5,7 +5,7 @@
         Param : Récupérer les articles en ligne selon leur statut, ici statut = 1;
         Retour : liste d'article publié
 
-*/ 
+*/  
 
 ?> 
 <div id="art_on" style="display: none;">
