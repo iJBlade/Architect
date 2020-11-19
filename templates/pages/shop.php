@@ -34,7 +34,7 @@
                         <?php // C'est le panier ?>
                         <div id="sidebar">
                             <!-- JE TRAVAILLE ICI POUR LE PANIER -->
-                            <a href="panier.php" style="text-decoration: none;"><h3>CART</h3></a>   
+                            <a href="panier.php" style="text-decoration: none;"><h3>PANIER</h3></a>   
                                 <div id="carte">
                                     <span class="ok"></span>                   
                                 </div>
@@ -222,8 +222,6 @@
                 </main>
                 <?php include "templates/fragments/footer.php" ?>
                 <script src="js/shop.js" type="text/javascript"></script>
-                <script src="js/shopping.js" type="text/javascript"></script>  
                 <script src="js/header.js" type="text/javascript"></script>
-                <script src="js/all.js" type="text/javascript"></script>
             </body>
     </html>

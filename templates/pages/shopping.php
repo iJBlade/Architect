@@ -51,13 +51,6 @@
                                     <div style="background-image: photoproduit3/<?= htmlentities($produit->id)?>.jpg"></div>
                                   </div>
                                 </div>
-                                <div class="detail-socials">
-                                  <div class="social-sharing" data-permalink="">
-                                    <a target="_blank"  class="share-facebook" title="Share"></a>
-                                    <a target="_blank"  class="share-twitter" title="Tweet"></a>
-                                    <a target="_blank"  class="share-pinterest" title="Pin it"></a>
-                                  </div>
-                                </div>
                               </div>
                             </div>
                             <div class="right-col">
@@ -167,13 +160,6 @@
                                   </select>
                                   <div class="btn-and-quantity-wrap">
                                     <div class="btn-and-quantity">
-                                      <div class="spinner">
-                                        <span class="btn minus" data-id="2721888517"></span>
-                                        <input type="text" id="updates_2721888517" name="quantity" value="1" class="quantity-selector">
-                                        <input type="hidden" id="product_id" name="product_id" value="2721888517">
-                                        <span class="q">Qty.</span>
-                                        <span class="btn plus" data-id="2721888517"></span>
-                                      </div>
                                       <div id="AddToCart" quickbeam="add-to-cart">
                                         <span id="AddToCartText"><a href="panier.php?action=ajout&amp;l=<?php echo $produit->titre;?>&amp;q=1&amp;p=<?php echo $produit->final_prix;?>&amp;f=<?php echo $produit->id;?>" style="color:white; text-decoration:none;">Ajouter au panier</a></span>
                                       </div>
@@ -182,8 +168,7 @@
                                 </form>
                                 <div class="tabs">
                                   <div class="tab-labels">
-                                    <span data-id="1" class="active">Info</span>
-                                    <span data-id="2">Brand</span>
+                                    <span data-id="1" class="active">Informations</span>
                                   </div>
                                   <div class="tab-slides">
                                     <div id="tab-slide-1" itemprop="description"  class="slide active">

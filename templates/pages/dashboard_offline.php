@@ -5,7 +5,7 @@
                         include "templates/fragments/dashboard_offline_article.php";
                     }elseif(isset($_GET["prod"])){
                         include "templates/fragments/dashboard_offline_produit.php";
-                    }else{
-                        echo "";
+                    }elseif(isset($_GET["chronique"])){
+                        include "templates/fragments/dashboard_offline_chronique.php";
                     }                              
                 ?>

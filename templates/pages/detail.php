@@ -11,7 +11,7 @@
         <link href="css/header.css" rel="stylesheet" type="text/css"/>  
         <link href="css/footer_blog.css" rel="stylesheet" type="text/css"/> 
         <link href="css/dashboard_article.css" rel="stylesheet" type="text/css"/>                  
-        <title><?= htmlentities($article->getTitre())?></title>       
+        <title>Portfolio-<?= htmlentities($article->getTitre())?></title>       
     </head>
     <body>
         <?php include 'templates/fragments/header.php'?>

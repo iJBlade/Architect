@@ -9,7 +9,7 @@
 
 ?> 
 <div id="art_on" style="display: none;">
-    <h1 style="padding: 22px 0px;background: darkslategrey; color:white;margin: 2px 0px;">Articles en ligne : </h1>
+    <h1 style="padding: 22px 0px;background: darkslategrey; color:white;margin: 2px 0px;">Portfolio en ligne : </h1>
     <?php  foreach ($lignes as $article){ ?>        
                         <figure class="snip1584">
                             <img src="photo1/<?= htmlentities($article->getId())?>.jpg" alt="sample87" />

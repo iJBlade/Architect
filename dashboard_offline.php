@@ -14,11 +14,16 @@
             $article= new article($linkID);//construct cherche la correspondance
             $article->loadFromTab($_POST);
             $lignes=$article->rechercheDetail($linkID);
-        }elseif($_GET["prod"]){
+        }elseif(isset($_GET["prod"])){
             $linkProd=$_GET['prod']; // $id de l'article détaillé en URL
             $produit= new produit($linkProd);//construct cherche la correspondance
             $produit->loadFromTab($_POST);
             $result=$produit->rechercheDetail($linkProd);
+        }elseif(isset($_GET["chronique"])){
+            $linkChro=$_GET['chronique']; // $id de l'article détaillé en URL
+            $chronique= new chronique($linkChro);//construct cherche la correspondance
+            $chronique->loadFromTab($_POST);
+            $resultat=$chronique->rechercheDetail($linkChro);
         }else{
             $message = "Erreur sur le chargement de l'article. Veuillez contactez le(a) développeur(euse).";
             include'templates/pages/error.php';

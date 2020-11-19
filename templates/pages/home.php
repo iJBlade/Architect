@@ -13,13 +13,14 @@
         <body>
                 <div class="slider">
                     <div class="slide1">
+                    <img src="" alt="">
                     </div>
                     <div class="slide2">
                     </div>
                     <div class="slide3">
                     </div>
                     <section class="container">
-                        <h1>Marie<br>Manzano<br>Blog</h1>
+                        <h1>Marie<br>Manzano</h1>
                         <a href="portfolio.php"><button data-hover="⟶"><div>Entrez</div></button></a>
                     </section>
                 </div>           

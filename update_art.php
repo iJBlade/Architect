@@ -26,8 +26,15 @@
           $linkProd = $_GET["prod"];
           $produit= new produit($linkProd);//construct cherche la correspondance
           $produit->loadFromTab($_POST);
-          $produit->modifier($linkProd);    
-          header("Location: update_art.php?prod= <?= $linkProd ?>");       
+          $produit->modifier($linkProd);         
+        }
+
+        if(isset($_GET['chronique'])){
+          /* *** * Affichage de l'article détaillé *** */ 
+          $linkChro = $_GET["chronique"];
+          $chronique= new chronique($linkChro);//construct cherche la correspondance
+          $chronique->loadFromTab($_POST);
+          $chronique->modifier($linkChro);       
         }
     }else{
         $message = "Si vous n'êtes pas un(e) administrateur(trice), vous n'êtes pas autorisé a consulter cette page. Si vous pensez qu'il s'agit d'un erreur, contactez le(a) développeur(euse).";

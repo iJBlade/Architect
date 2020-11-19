@@ -10,7 +10,7 @@
 
 <?php
     if(estConnecte()){
-
+ 
         if(isset($_POST['Valider'])){
             
             $id = $_POST["id"];

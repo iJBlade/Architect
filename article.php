@@ -19,8 +19,8 @@
 /****************** * Programmation * *************************************** */ 
     if(isset($_GET['id'])){
         /* *** * Affichage de l'article détaillé *** */ 
-          $article= new article($linkID);//construct cherche la correspondance
-          $article->loadFromTab($_POST);
-          $lignes=$article->rechercheDetail($linkID);
-          include'templates/pages/detail.php';
+          $chronique= new chronique($linkID);//construct cherche la correspondance
+          $chronique->loadFromTab($_POST);
+          $lignes=$chronique->rechercheDetail($linkID);
+          include'templates/pages/chronique.php';
       }

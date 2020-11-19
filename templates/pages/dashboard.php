@@ -23,13 +23,20 @@
             <?php include 'templates/fragments/header.php'?>
             <main>
                 <h1 style="text-align: center;">Tableau de bord</h1>
-                <div style="max-width: 1200px;margin: 0 auto; padding:40px 20px;">
-                    <div style="float: left;">
-                        <a  id="hors_ligne">Article hors ligne|</a>
-                        <a  id="en_ligne">Article en ligne|</a>
-                        <a  id="article">Créer un nouvel article</a>
+                <div style="max-width: 1200px;margin: 0 auto; padding:40px 20px; display:flex">
+                    <div style="display: inline-block;">
+                        <a  id="hors_ligne">Portfolio hors ligne|</a>
+                        <a  id="en_ligne">Portfolio en ligne|</a>
+                        <a  id="article">Créer un nouveau portfolio</a>
                     </div>
-                    <div style="float:right;">
+                    <div>
+                        <div style="display: inline-block;">
+                            <a  id="off_ligne">Article hors ligne|</a>
+                            <a  id="on_ligne">Article en ligne|</a>
+                            <a  id="chronique">Créer un nouvel article</a>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;">
                         <a  id="off">Produit hors ligne|</a>
                         <a  id="on">Produit en ligne|</a>
                         <a  id="produit">Créer un nouveau produit</a>
@@ -38,6 +45,11 @@
 
                 <div style="text-align: center;">
                     <?php include "templates/fragments/compteur.php"?>
+
+                    <?php include "templates/fragments/chronique_en_cours.php"?>   
+                    <?php include "templates/fragments/chronique_en_ligne.php"?>
+                    <?php include "templates/fragments/create_chronique.php"?>
+
                     <?php include "templates/fragments/article_en_cours.php"?>   
                     <?php include "templates/fragments/article_en_ligne.php"?>
                     <?php include "templates/fragments/create_art.php"?>

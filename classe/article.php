@@ -1,6 +1,6 @@
 <?php
 
-/* Classe article le site drop shipping de Marie*/
+/* Classe portfolio le site drop shipping de Marie*/
 class article {
     //attribut    
     protected $id;

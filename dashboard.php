@@ -25,7 +25,13 @@
         $produit->loadFromTab($_POST);
         $result=$produit->recherche(); // affichage des produits en ligne
         $tab=$produit->rechercheNo_online(); // affichage des produits non en ligne
- 
+
+        // pour les chroniques
+        $chronique = new chronique();
+        $chronique->loadFromTab($_POST);
+        $resultat_online=$chronique->recherche(); // quand statut=1; en ligne
+        $resultat=$chronique->rechercheNo_Online(); // quand statut=0; offligne
+
         // pour le compteur 
         $ip = $_SERVER['REMOTE_ADDR']; // l'adresse IP du visiteur
         $date = date('Y-m-d'); // la date d'aujourd'hui , sous le format AAAA-MM-JJ

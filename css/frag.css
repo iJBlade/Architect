@@ -1,5 +1,13 @@
-
-
+.svg-icon:hover{
+  fill:red;
+}
+.reload{
+  padding: 5px 21px;border-radius: 20px;background-color: white;color: grey;cursor: pointer;border: 1px solid gray;box-shadow: 1px 1px 1px gray;
+}
+.reload:hover{
+  background-color: gray;
+  color: white;
+}
 .svg-wrapper {
   height: 60px;
 	margin: 0 auto;
@@ -14,7 +22,7 @@
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
   stroke-width: 8px;
-  stroke: #19f6e8;
+  stroke: black;
 }
 
 .text {

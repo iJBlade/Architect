@@ -9,7 +9,7 @@
 
 ?>
 <div id="art_off" style="display: none;">
-    <h1 style="padding: 22px 0px;background: darkslategrey; color:white;margin: 2px 0px;">Articles hors ligne : </h1>
+    <h1 style="padding: 22px 0px;background: darkslategrey; color:white;margin: 2px 0px;">Portfolio hors ligne : </h1>
         <?php  foreach ($ligne as $article){ ?>                  
                         <figure class="snip1584">
                             <img src="admin/encours.png">

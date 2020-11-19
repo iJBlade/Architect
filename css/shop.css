@@ -765,7 +765,7 @@ div.cart-icon-top{
 	height:3px;
 	z-index:1;
 	top: 140px;
-	left: 90px;
+	left: 108px;
 }
 div.cart-icon-bottom{
 	position:absolute;
@@ -775,7 +775,7 @@ div.cart-icon-bottom{
 	height:19px;
 	z-index:1;
 	top: 143px;
-	left: 90px;
+	left: 108px;
 }
 body.MakeFloatingCart div.cart-icon-top{z-index:30;}
 body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}	

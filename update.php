@@ -23,6 +23,13 @@
         $ligne=$produit->rechercheDetail($linkProduit);
 
       }
+      if(isset($_GET['chronique'])){
+        $linkChronique = $_GET['chronique'];
+        $chronique= new chronique($linkChronique);//construct cherche la correspondance
+        $chronique->loadFromTab($_POST);
+        $resultat=$chronique->rechercheDetail($linkChronique);
+
+      }
     include'templates/pages/update.php';
 
   }else{

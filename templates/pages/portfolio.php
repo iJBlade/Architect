@@ -23,7 +23,7 @@
                             <figcaption>
                                 <h3><?= htmlentities($article->getTitre())?></h3>
                             </figcaption>
-                            <a href="article.php?id=<?=$article->getId()?>" id="aI"></a>
+                            <a href="oeuvres.php?id=<?=$article->getId()?>" id="aI"></a>
                         </figure>
                     <?php } ?>
                 </div> 

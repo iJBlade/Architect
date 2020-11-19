@@ -7,6 +7,8 @@
                         include "templates/fragments/update_article.php";
                     }elseif(isset($_GET["prod"])){
                         include "templates/fragments/update_produit.php";
+                    }if(isset($_GET["chronique"])){
+                        include "templates/fragments/update_chronique.php";
                     }else{
                         echo "";
                     }                              

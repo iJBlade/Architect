@@ -9,7 +9,7 @@ include 'lib/connexion.php';
 include 'lib/panier.php';
 include 'classe/article.php';
 include 'classe/admin.php';
-include 'classe/photo.php';
+include 'classe/chronique.php';
 include 'classe/produit.php';
 /* ******************* * Connexion à la base de données * ******************* */
 global $bdd; 

@@ -1,4 +1,4 @@
-#hors_ligne,#en_ligne,#article,#off,#on,#produit{
+#hors_ligne,#en_ligne,#article,#off,#on,#produit,#off_ligne,#on_ligne,#chronique{
     text-decoration:none;
     font-size: 10px;
     text-transform: uppercase;
@@ -8,14 +8,14 @@
     cursor: pointer;
 
 }
-#hors_ligne,#en_ligne,#article,#off,#on,#produit {
+#hors_ligne,#en_ligne,#article,#off,#on,#produit,#off_ligne,#on_ligne,#chronique {
     display: inline-block;
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
 
-#hors_ligne::after,#en_ligne::after,#article::after,#off::after,#on::after,#produit::after {
+#hors_ligne::after,#en_ligne::after,#article::after,#off::after,#on::after,#produit::after,#off_ligne::after,#on_ligne::after,#chronique::after {
     content: '';
     display: block;
     width: 0;
@@ -25,7 +25,7 @@
     cursor: pointer; 
 }
 
-#hors_ligne:hover::after,#en_ligne:hover::after,#article:hover::after,#off:hover::after,#on:hover::after,#produit:hover::after {
+#hors_ligne:hover::after,#en_ligne:hover::after,#article:hover::after,#off:hover::after,#on:hover::after,#produit:hover::after,#off_ligne:hover::after,#on_ligne:hover::after,#chronique:hover::after {
     width: 100%;
     cursor: pointer;
 

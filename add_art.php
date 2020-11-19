@@ -29,6 +29,12 @@
             $produit->insert($prix,$tva,$final);            
             header("Location:dashboard.php");
         }
+        if(isset($_POST['Ajouter_chronique'])){
+            $chronique =  new chronique();
+            $chronique->loadFromTab($_POST); // charger les données
+            $chronique->insert();            
+            header("Location:dashboard.php");
+        }
     }else{
         include "templates/pages/error.php";
     }

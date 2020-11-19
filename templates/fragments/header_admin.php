@@ -14,9 +14,10 @@
 
     <nav id="nav_list" style="width:1900px;">
         <div>
-            <ul style="background-color: white; width:299px">
-            <li><a href="home.php" id="aA">Home</a></li><br>
+            <ul style="background-color: white; width:340px">
+            <li><a href="home.php" id="aA" >Home</a></li><br>
             <li><a href="portfolio.php" id="aA">Portfolio</a></li>
+            <li><a href="articles.php" id="aA">Articles</a></li>
             <li><a href="dashboard.php" id="aA">Tableau de bord</a></li>
             <li><a href="presentation.php" id="aA">About</a></li>
             <li><a href="contact.php" id="aA">Contact</a></li>

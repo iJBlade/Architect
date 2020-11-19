@@ -1,25 +1,90 @@
+body{
+    overflow: inherit;
+    background-color:#f4f4f4;
+}
+
 main{
-    position :absolute; 
-    top :60px; 
-    left:15px
+    padding-top: 45px;
+    margin: 0 auto;
+    max-width:1400px;
+    max-height: 1400px;
+    display:inline-table;
+    background-color:white;
 }
-#_1{
-    display:flex;
+
+
+
+li{
+    margin: 4px 30px;
 }
-#_3{
-    text-align: initial;
-    margin: 115px;
+
+#choix{
+
+    font-size: 12px;
+
 }
-#_3 h1{
-    margin: 45px;
+.gfield_label{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    width: 100%;
+    float:left;
+    margin:2px 2px;
 }
-#_3 p{
-    font-size : 20px;
-    margin:45px;
+input[type="text"]{
+    width: 476px;
+    height: 35px;
+    margin: 6px 4px;
+    color: #8b8d94;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    padding: 5px 15px 5px 15px;
+    border-color: rgba(51,51,51,0.11);
+    background-color: #fdfdfd;
+    border-radius: 2px;
 }
-/***** animation button */
-#_3 button{
-    margin:45px;
+#surface{
+    width: 100%;
+    height: 35px;
+    color: #8b8d94;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    padding: 5px 15px 5px 15px;
+    border-color: rgba(51,51,51,0.11);
+    background-color: #fdfdfd;
+    border-radius: 2px;
+}
+select{
+    width: 100%;
+    height: 35px;
+    color: #8b8d94;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    padding: 5px 15px 5px 15px;
+    border-color: rgba(51,51,51,0.11);
+    background-color: #fdfdfd;
+    border-radius: 2px;
+}
+textarea{
+    width: 100%;
+    color: #8b8d94;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    padding: 5px 15px 5px 15px;
+    border-color: rgba(51,51,51,0.11);
+    background-color: #fdfdfd;
+    border-radius: 2px;
+}
+li{
+    list-style: none;
 }
 button {
     background: black; outline: none;
@@ -59,128 +124,4 @@ button {
       cursor:pointer;
     }
 
-    /************ formulaire ****************/
-
-    #_4{
-        width : 1088px;
-        height: 745px;
-        background-color:#fff;
-        position : absolute;
-        right:0%;
-        display:none;
-    }
-    #close_form{
-        cursor:pointer;
-        font-size:25px;
-        position: absolute;
-        right: 5%;
-        color:gray;
-    }
-    #close_form:hover{
-        cursor:pointer;
-        color:red;
-    }
-    form label, .fat, .fat-send {
-        -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
-        -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
-        -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
-        transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
-    }
-    form {
-        position: absolute; left: calc(50% - 250px); top: 30%;
-        display: inline-block;
-        width: 500px;
-        box-sizing: border-box;
-        padding: 30px 25px;
-        border-radius: 4px;
-    }
-    
-    h1 {
-        color: black;
-        font-size: 2em; font-weight: 600;
-        margin: 1em 0 1.5em;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    
-    .group-form {
-        position: relative;
-        padding: 10px 0;
-    }
-    .group-form:first-of-type {padding-top: 0;}
-    .group-form:last-of-type {padding-bottom: 0;}
-    
-    .fat {
-        border:0;
-        border-bottom: 1px solid #1d2027;
-        background-color: #fff;
-        width: 100%;
-        position: relative; z-index: 1;
-        display: block;
-        box-sizing: border-box;
-        padding: 10px 20px;
-        color: #272a33;
-        line-height: 0;
-        font-size: 1em;
-    }
-    .fat:focus, .fat:valid {
-        background-color: #fff;
-        color: #000;
-        margin-top: 30px;
-    }
-    .fat:focus ~ label {
-        -webkit-transform: translate(0, -40px);
-        transform: translate(0, -40px);
-        color: #000;
-    }
-    .fat:valid ~ label {
-        -webkit-transform: translate(0, -40px);
-        transform: translate(0, -40px);
-        color: #000;
-    }
-    
-    .fat.error {
-        border-color: #e74c3c;
-    }
-    
-    .fat-send {
-        border: 1px solid #1d2027;
-        background-color: #fff;
-        box-sizing: border-box;
-        cursor: pointer;
-        border-radius: 4px;
-        padding: 15px 28px;
-        color:#000;
-        line-height: 0;
-        font-size: 1em;
-    }
-    .fat-send:hover {
-        background-color: #1d2027;
-        color:#fff;
-    }
-    label {
-        transform-origin: left center;
-        box-sizing: border-box;
-        padding: 10px 20px;
-        display: block;
-        position: absolute;
-        margin-top: -34px;
-        z-index: 2;
-        pointer-events: none;
-        color: grey;
-        line-height: 0;
-        font-size: 1.25em;
-    }    
-    textarea[type="text"]{
-        width: 100%;
-        color: black;
-        height: 100px;
-        border: 0;
-            border-bottom-color: currentcolor;
-            border-bottom-style: none;
-            border-bottom-width: 0px;
-        border-bottom: 1px solid black;
-    }
-    .svg-icon{
-        width:15px;
-    }
+   
