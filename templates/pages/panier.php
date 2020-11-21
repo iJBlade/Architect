@@ -15,7 +15,7 @@
       </head>
          <body>
             <?php include 'templates/fragments/header_shop.php' ?>
-            <main style="position: absolute;width: 100%;top: 15%;">
+            <main style="position: absolute;width: 100%;top: 15%;    margin-bottom: 145px;">
                <div>
                   <form method="post" action="panier.php">
                      <table style="width: 1500px;margin: 0 auto;">

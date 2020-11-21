@@ -186,7 +186,7 @@ class chronique{
             $chronique->loadFromTab($ligne);           
             $result[$ligne["id"]] = $chronique;
 	 }	
-	 return $result;
+	 return $result; 
  }           
     public function rechercheNo_online(){
         // Rôle : rechercher les id des chroniques
@@ -202,16 +202,16 @@ class chronique{
         return false;
         }	
         // $result[] pour recuperer les résultats
-        $result=[];
+        $resultat=[];
         //$ligne = $req->fetch(PDO::FETCH_ASSOC);
         // si il y a une ligne a lire, fecth retourne le résultat. Peut-être fetchAll?	 
         while ($ligne = $req->fetch(PDO::FETCH_ASSOC)) {
                 // Remplir le tableau Ã  partir de $ligne
                 $chronique = new chronique();
                 $chronique->loadFromTab($ligne);           
-                $result[$ligne["id"]] = $chronique;
+                $resultat[$ligne["id"]] = $chronique;
         }	
-        return $result;
+        return $resultat;
     }    
     public function rechercheDetail(){
     	// Rôle : rechercher les id des produits

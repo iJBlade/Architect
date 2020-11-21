@@ -31,7 +31,12 @@
         $chronique->loadFromTab($_POST);
         $resultat_online=$chronique->recherche(); // quand statut=1; en ligne
         $resultat=$chronique->rechercheNo_Online(); // quand statut=0; offligne
+        
+        // pour les catégories 
 
+        $categorie = new categories();
+        $categorie->loadFromTab($_POST);
+        $ligne_categorie=$categorie->rechercheId();
         // pour le compteur 
         $ip = $_SERVER['REMOTE_ADDR']; // l'adresse IP du visiteur
         $date = date('Y-m-d'); // la date d'aujourd'hui , sous le format AAAA-MM-JJ

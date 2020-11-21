@@ -14,11 +14,10 @@
 
     <nav id="nav_list" style="width:1900px;">
         <div>
-            <ul style="background-color: white; width:299px">
-                <li><a href="home.php" id="aA">BLOG</a></li><br>
-                <li><a href="shop.php" id="aA">Shop</a></li>
-                <li><a href="panier.php" id="aA">Panier</a></li>
-
+            <ul style="background-color: white; width:299px;text-align: center;">
+                <li style="margin-top:60px;"><a href="home.php" id="aA">BLOG</a></li><br>
+                <li style="margin-top:60px;"><a href="shop.php" id="aA">Shop</a></li>
+                <li style="margin-top:60px;"><a href="panier.php" id="aA">Panier</a></li>
             </ul>
             <div style="width:1700px;height:1200px;background-color:rgba(51,51,51,0.71); visibility:visible;opacity:1;"></div>
         </div>        

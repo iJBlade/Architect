@@ -25,18 +25,13 @@
             </div> 
             <div class="group-form">
                 <p style="font-size: 17px;padding: 15px;">Sélectionnez une catégorie pour ce produit:</p>
-                    <div style="display:flex;"style="display:flex;left: 46%;position: absolute;top: 33%;">
-                        <p style="font-size: 17px;padding: 15px;">Categorie 1 </p>
-                        <input type="radio" name="categorie" value="1"checked>
-                    </div>
-                    <div style="display:flex;"style="display:flex;left: 46%;position: absolute;top: 33%;">
-                        <p style="font-size: 17px;padding: 15px;">Categorie 2</p>
-                        <input type="radio" name="categorie" value="2">                       
-                    </div>
-                    <div style="display:flex;"style="display:flex;left: 46%;position: absolute;top: 33%;">
-                        <p style="font-size: 17px;padding: 15px;">Categorie 3</p>
-                        <input type="radio" name="categorie" value="3">
-                        
+
+                    <div style="width: 130px;margin: 0 auto;">
+                    <?php foreach ($ligne_categorie as $categorie=>$id){ ?> 
+                        <p style="font-size: 17px;padding: 15px;"><?=$id->getTitre()?></p>
+                        <input type="radio" name="categories" value="<?=$id->getId()?>">       
+
+                    <?php }?> 
                     </div>
             </div>      
             <div>

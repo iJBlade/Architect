@@ -15,7 +15,7 @@
         </head>
         <body>
           <?php include "templates/fragments/header.php"?>
-          <main style="padding-top:150px;">
+          <main style="padding-top:150px;    margin-bottom: 145px;">
             <div class="card-container">
               <div class="card-wrapper"></div>
               <div class="form-container">

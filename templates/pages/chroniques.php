@@ -15,7 +15,7 @@
     </head>
         <body>
             <?php include 'templates/fragments/header.php'?>
-            <main style="position:absolute;top:60px">
+            <main style="position:absolute;top:60px;    margin-bottom: 145px;">
                 <div>
                     <?php  foreach ($lignes as $chronique){ ?>
                         <figure class="snip1584"> 

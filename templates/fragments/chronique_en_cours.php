@@ -18,4 +18,4 @@
                             </figcaption><a href="dashboard_offline.php?chronique=<?=$chronique->getId()?>" id="aI"></a>
                         </figure>               
         <?php } ?>                
-</div>   
+</div>    

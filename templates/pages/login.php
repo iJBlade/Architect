@@ -15,7 +15,7 @@
     </head> 
     <body>
         <?php include "templates/fragments/header.php" ?>
-        <main>
+        <main style="    margin-bottom: 145px;">
             <!-- Google Font -->
 
             <p id="p_anim"><span id="anim">Connexion</span></p>

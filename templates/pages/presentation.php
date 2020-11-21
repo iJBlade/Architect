@@ -14,8 +14,8 @@
         </head>
             <body>
                 <?php include 'templates/fragments/header.php'?>
-                <main style="position:absolute;top:60px;height:900px;">
-                        <div style="position: absolute;left: 150%;z-index: 20;width: 187%;">
+                <main style="position:absolute;top:60px;height:900px;    margin-bottom: 145px;">
+                        <div style="position: absolute;left: 150%;z-index: 20;width: 187%;top: 5%;">
                             <h1><?= $user->getTitre()?></h1>
                             <?php if(estConnecte()){ ?>
                                     <a href="#" id="b-t">Modifier le titre de ma présentation</a>

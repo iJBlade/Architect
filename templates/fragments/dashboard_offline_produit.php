@@ -12,7 +12,7 @@
 <link href="css/header.css" rel='stylesheet' type='text/css'>
 <link href="css/footer_blog.css" rel='stylesheet' type='text/css'>
 <?php include "templates/fragments/header.php"?>
-<main style="padding-top: 85px;">
+<main style="padding-top: 85px;    margin-bottom: 145px;">
 <div style="max-width: 730px;margin: 0 auto;">
         <a href="delete.php?prod=<?=$produit->getId()?>" id="aA">Supprimer ce produit ? </a> 
         <a href="online.php?prod=<?=$produit->getId()?>" id="aA"> Mettre ce produit en ligne ? </a>

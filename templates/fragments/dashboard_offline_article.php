@@ -26,7 +26,7 @@
     <body>
         <?php include 'templates/fragments/header.php'?>
     <body>
-        <main style="position:absolute;top:60px;width:100%; ">
+        <main style="position:absolute;top:60px;width:100%;    margin-bottom: 145px; ">
         
         <?php foreach($lignes as $article){ ?> 
                 <div id="top_column">

@@ -17,7 +17,7 @@
     <body>
         <?php include 'templates/fragments/header.php'?>
     <body>
-        <main>
+        <main style="    margin-bottom: 145px;">
             <div id="top_column">
                 <h1>Aperçu de l'article hors ligne. </h1>
                 <p>Note : Cette page est l'aperçu de ce que la(e) visitrice(eur) voit lorsqu'il/elle consulte cet article. Toutes modifications sur un article en ligne sera immédiatement vu par la(e) visitrice(eur).</p>
@@ -42,7 +42,7 @@
                         <p><?= nl2br(htmlentities($chronique->getContenu4())) ?></p>
                         <div>
                             <a href="delete.php?chronique=<?=$chronique->getId()?> " id="aA">Supprimer cet article ? </a><br>
-                            <a href="offline.php?chronique=<?=$chronique->getId()?>" id="aA" >Mettre cet article hors ligne ? </a><br>
+                            <a href="online.php?chronique=<?=$chronique->getId()?>" id="aA" >Mettre cet article en ligne ? </a><br>
                             <a href="update.php?chronique=<?=$chronique->getId()?>"  id="aA">Modifier cet article ?</a>   
                         </div>
                 </div>   

@@ -21,7 +21,7 @@
     </head>
         <body>
             <?php include 'templates/fragments/header.php'?>
-            <main>
+            <main style="    margin-bottom: 145px;">
                 <h1 style="text-align: center;">Tableau de bord</h1>
                 <div style="max-width: 1200px;margin: 0 auto; padding:40px 20px; display:flex">
                     <div style="display: inline-block;">
@@ -44,7 +44,7 @@
                 </div>
 
                 <div style="text-align: center;">
-                    <?php include "templates/fragments/compteur.php"?>
+                    <?php //include "templates/fragments/compteur.php"?>
 
                     <?php include "templates/fragments/chronique_en_cours.php"?>   
                     <?php include "templates/fragments/chronique_en_ligne.php"?>

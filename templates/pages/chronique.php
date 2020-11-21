@@ -17,7 +17,7 @@
     <body>
         <?php include 'templates/fragments/header.php'?>
     <body>
-        <main>
+        <main style="    margin-bottom: 145px;">
         
         <?php foreach($lignes as $chronique){ ?>   
                 <div id="container_head">

@@ -17,7 +17,7 @@
     <body>
         <?php include 'templates/fragments/header.php'?>
     <body>
-        <main>
+        <main style="    margin-bottom: 145px;">
             <div id="top_column">
                 <h1>Aperçu de l'article en ligne. </h1>
                 <p>Note : Cette page est l'aperçu de ce que la(e) visitrice(eur) voit lorsqu'il/elle consulte cet article. Toutes modifications sur un article en ligne sera immédiatement vu par la(e) visitrice(eur).</p>
