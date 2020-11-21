@@ -15,7 +15,6 @@
             $sql= "DELETE FROM article WHERE id=$id";
             $req = $bdd->prepare($sql);
             $req->execute();
-
         }
         if(isset($_GET["prod"])){
             $id_prod=$_GET["prod"];
@@ -28,7 +27,6 @@
             $sql3= "DELETE FROM chronique WHERE id=$id_chronique";
             $req3 = $bdd->prepare($sql3);
             $req3->execute();
-
         }
         header("Location:dashboard.php");
 
