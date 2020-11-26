@@ -11,9 +11,6 @@
         <link href="css/header.css" rel="stylesheet" type="text/css"/>  
         <link href="css/contact.css" rel="stylesheet" type="text/css"/>  
         <link href="css/footer_blog.css" rel="stylesheet" type="text/css"/> 
-             <style>
-                 
-             </style>
         <title>Contact</title>       
     </head>
         <body>
