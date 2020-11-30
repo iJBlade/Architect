@@ -15,9 +15,21 @@
     </head>
         <body>
             <?php include 'templates/fragments/header.php'?>
-            <main style="position:absolute;top:60px;    margin-bottom: 145px;">
+            <main style="/*! position:absolute; *//*! top:60px; */    /*! margin-bottom: 145px; */position: absolute;top: 60px;margin-bottom: 145px;margin: 0 auto;width: 100%;">
                 <div>
-                    <?php  foreach ($lignes as $chronique){ ?>
+                <?php if(isset($_GET["categorie"])){
+                            foreach ($ligne as $chronique){ ?>
+                                <figure class="snip1584"> 
+                                    <img src="photochronique1/<?= htmlentities($chronique->getId())?>.jpg" alt="sample87"/>
+                                    <figcaption>
+                                        <h3><?= htmlentities($chronique->getTitre())?></h3>
+                                    </figcaption>
+                                    <a href="article.php?id=<?=$chronique->getId()?>" id="aI"></a>
+                                </figure>
+                            <?php }
+                            
+                            }else{
+                              foreach ($lignes as $chronique){ ?>
                         <figure class="snip1584"> 
                             <img src="photochronique1/<?= htmlentities($chronique->getId())?>.jpg" alt="sample87"/>
                             <figcaption>
@@ -25,7 +37,7 @@
                             </figcaption>
                             <a href="article.php?id=<?=$chronique->getId()?>" id="aI"></a>
                         </figure>
-                    <?php } ?>
+                    <?php } } ?>
                 </div> 
             </main>
             <?php  include "templates/fragments/footer.php"?>                    

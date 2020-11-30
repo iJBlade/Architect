@@ -66,16 +66,8 @@
                             <h3>CATEGORIES</h3>
                                 <div class="checklist categories">
                                     <ul>
-                                        <li><a href=""><span></span>Categorie 1</a></li>
-                                        <li><a href=""><span></span>Categorie 1</a></li>
-                                        <li><a href=""><span></span>Categorie 1</a></li>
-                                        <li><a href=""><span></span>Categorie 1</a></li>
-                                        <li><a href=""><span></span>Categorie 1</a></li>
-                                        <li><a href=""><span></span>Categorie 1</a></li>
-                                        <li><a href=""><span></span>Categorie 1</a></li>
-                                        <li><a href=""><span></span>Categorie 1</a></li>
-                                        <li><a href=""><span></span>Categorie 1</a></li>
-                                        <li><a href=""><span></span>Categorie 1</a></li>
+                                        <li><a href=""><span></span>Cuisine</a></li>
+                                        <li><a href=""><span></span>Chambres</a></li>
                                     </ul> 
                                 </div>
                                 

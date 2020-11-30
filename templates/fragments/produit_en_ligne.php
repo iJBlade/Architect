@@ -1,6 +1,6 @@
 <?php // produit qui sont en ligne ?>
 <div id="prod_on" style="display: none;">
-<h1 style="padding: 22px 0px;background: darkgoldenrod;color: white;margin: 2px 0px;">Produits en ligne : </h1>
+<h1 style="padding: 22px 0px;margin: 2px 0px;">Produits en ligne : </h1>
 <?php  foreach ($result as $produit){ ?>
                              
                         <figure class="snip1584">

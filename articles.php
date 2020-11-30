@@ -20,5 +20,7 @@ if(estConnecte()){
     $chronique= new chronique();
     $chronique->loadFromTab($_POST);
     $lignes=$chronique->recherche();  
-
+    // pour les catégories de chaque article 
+    $texte = empty($_GET["categorie"]) ? "" : $_GET["categorie"];
+    $ligne=$chronique->chroniqueCategorie($texte); 
     include 'templates/pages/chroniques.php';

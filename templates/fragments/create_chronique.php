@@ -1,7 +1,7 @@
 <?php /*fragment pour créer un nouvel article */?>
 <div id="chro" style="display: none;"> 
         <form id="create_art" method="POST" action="add_art.php">
-            <h2 style="padding: 22px 0px;background: darksalmon; color:white;margin: 2px 0px;">Création d'une nouvelle chronique - Etape n°1 : Insertion des paragraphes.</h2> 
+            <h2 style="padding: 22px 0px;margin: 2px 0px;">Création d'une nouvelle chronique - Etape n°1 : Insertion des paragraphes.</h2> 
             <div class="group-form">
                 <input type="text" name="titre" class="fat" required>
                 <label>Titre de l'article</label>      

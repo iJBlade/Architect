@@ -33,13 +33,13 @@
                                 <div class="wrapper">
                                     <div class="picture">
                                         <img id='profil' src="photoproduit1/<?= htmlentities($produit->getId())?>.jpg" width="500px" height="500px">      
-                                        <?php include "templates/fragments_photo/ajout_photo/insert_photo3_produit.php"?>       
+                                        <?php include "templates/fragments_photo/ajout_photo/insert_photo_produit.php"?>       
                                     </div> 
                                 </div>
                                 <div class="wrap">
                                     <div class="picture">
                                         <img id='profil' src="photoproduit2/<?= htmlentities($produit->getId())?>.jpg" width="500px" height="500px">      
-                                        <?php include "templates/fragments_photo/ajout_photo/insert_photo3_produit.php"?>   
+                                        <?php include "templates/fragments_photo/ajout_photo/insert_photo2_produit.php"?>   
                                     </div>
                                 </div>  
                                 <div class="wraper">

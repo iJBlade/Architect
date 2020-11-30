@@ -260,6 +260,29 @@ class chronique{
         }
     } 
 
+    public function chroniqueCategorie($texte){
+        //Rôle :rechercher les chronique par catégorie
+        //Param : $texte, correspondance avec $_GET du controleur 
+        //Retour : liste d'chronique par region 
+        //j'appel ma base de donnée 
+         global $bdd;
+        //je construits mon chemin sql 
+        $sql = "SELECT * FROM chronique WHERE categories LIKE :texte";
+        $req = $bdd->prepare($sql);
+        if ( $req->execute([":texte" => "%$texte%"]) === false){
+           echo "Erreur requête : $sql";
+           return false;
+        }		// $result[] pour recuperer les résultats
+        $result=[];	 
+         while ($lignes = $req->fetch(PDO::FETCH_ASSOC)) {
+            // Remplir le tableau Ã  partir de $ligne
+            $chroniques = new chronique();
+            $chroniques->loadFromTab($lignes);   
+            $result[$lignes["id"]] = $chroniques;
+         }	
+         return $result;	        
+    } 
+
 
 
 

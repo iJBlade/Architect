@@ -16,12 +16,12 @@
                 <li id="more">
                     <a href="articles.php" id="aA" class="create_art">Articles</a>
                     <ul style="display:none;" id="append">
-                        <li style="padding: 10px;margin-left: 46px;list-style:square;"><a href="#" id="aA" >Test1</a></li>
-                        <li style="padding: 10px;margin-left: 46px;list-style:square;"><a href="#" id="aA">Test2</a></li>
-                        <li style="padding: 10px;margin-left: 46px;list-style:square;"><a href="#" id="aA">Test3</a></li>
+                        <li style="padding: 10px;margin-left: 46px;list-style:square;"><a href="articles.php?categorie=1" id="aA" >Style1</a></li>
+                        <li style="padding: 10px;margin-left: 46px;list-style:square;"><a href="articles.php?categorie=2" id="aA">Style2</a></li>
+                        <li style="padding: 10px;margin-left: 46px;list-style:square;"><a href="articles.php?categorie=3" id="aA">Style3</a></li>
                     </ul>
                 </li>
-                <li><a href="presentation.php" id="aA">About</a></li>
+                <li><a href="presentation.php" id="aA">A propos</a></li>
                 <li><a href="contact.php" id="aA">Contact</a></li>
                 <li><a href="shop.php" id="aA">Shop</a></li>
             </ul>

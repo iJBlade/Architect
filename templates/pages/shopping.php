@@ -19,7 +19,7 @@
             <title>SHOPPING</title>       
         </head>
             <body>
-              <?php  include "templates/fragments/header.php" ?>
+              <?php  include "templates/fragments/header_shop.php" ?>
               <main style="padding-top: 40px;">
                 <section aria-label="Main content" role="main" class="product-detail">
                   <div itemscope itemtype="http://schema.org/Product">
@@ -158,6 +158,13 @@
                                       XXL / Red - $850.00 USD
                                     </option>
                                   </select>
+                                  <div style="margin: 43px 12px;font-size: 20px;">
+                                     <?php  if($produit->stock < 13){ ?>
+                                      <p style="color: darkred;">Attention, il ne reste plus que :  <?= htmlentities($produit->stock)?> produits ! </p>
+                                     <?php  }else{ ?>
+                                      <p>En stock :  <?= htmlentities($produit->stock)?>. </p>
+                                     <?php } ?>
+                                    </div>
                                   <div class="btn-and-quantity-wrap">
                                     <div class="btn-and-quantity">
                                       <div id="AddToCart" quickbeam="add-to-cart">

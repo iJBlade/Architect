@@ -4,6 +4,7 @@ header{
     width:100%;
     background-color: white;
     height: 58px;
+    top:0;
 }
 header div:nth-child(1){
     display:flex;

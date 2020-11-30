@@ -276,7 +276,7 @@ class produit{
         // Paramètres : néant
 
         global $bdd;
-        $sql = "SELECT * FROM produit WHERE `categorie` = 1  ORDER BY produit.id desc LIMIT 4" ;
+        $sql = "SELECT * FROM produit WHERE `statut` = 1  ORDER BY produit.id desc LIMIT 4" ;
         $req=$bdd->prepare($sql);
         if ( $req->execute([":id" => $this->id]) === false){
         echo "Erreur requête : $sql";

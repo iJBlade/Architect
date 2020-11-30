@@ -9,7 +9,7 @@
 
 ?> 
 <div id="chro_on" style="display: none;">
-    <h1 style="padding: 22px 0px;background: darksalmon; color:white;margin: 2px 0px;">Articles en ligne : </h1>
+    <h1 style="padding: 22px 0px;margin: 2px 0px;">Articles en ligne : </h1>
     <?php  foreach ($resultat_online as $chronique){ ?>        
                         <figure class="snip1584">
                             <img src="photochronique1/<?= htmlentities($chronique->getId())?>.jpg" alt="sample87" />

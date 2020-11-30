@@ -15,7 +15,7 @@
     </head>
         <body>
         <?php include "templates/fragments/header.php"?>
-            <main style="    margin-bottom: 145px;">
+            <main style="    margin-bottom: 60px;">
                 <div class="flex justify" style="background-color: black;color:white;font-size: 17px;padding: 25px 162px;margin: 40px auto;">
                     <div>
                         <svg class="svg-icon" viewBox="0 0 20 20" fill="white" style="width:25px;">

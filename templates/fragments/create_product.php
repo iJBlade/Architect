@@ -2,7 +2,7 @@
 <?php /*fragment pour créer un nouveau produit */?>
 <div id="prod" style="display: none;">
         <form id="create_prod" method="POST" action="add_art.php" >
-            <h2 style="padding: 22px 0px;background: darkgoldenrod; color:white;margin: 2px 0px;">Création d'un nouveau produit - Etape n°1 : Insertion du texte.</h2>
+            <h2 style="padding: 22px 0px;margin: 2px 0px;">Création d'un nouveau produit - Etape n°1 : Insertion du texte.</h2>
             <div class="group-form">
                 <input type="text" name="titre" class="fat" required>
                 <label>Titre de l'article</label>      
