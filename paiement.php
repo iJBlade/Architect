@@ -8,4 +8,4 @@
     session_start();
 /****************** * Programmation * *************************************** */ 
 
-include "templates/pages/payment.php";
+include "templates/pages/paiement.php"; 
