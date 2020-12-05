@@ -1,7 +1,7 @@
 <?php // Fragment de modification pour le prix de la classe PRODUIT ?>
-<form action ="update_prod.php?prod=<?= $produit->getId() ?>" method="POST" id="prix_final" style="display: none;" >
-    <textarea name="final_prix" ></textarea>
-    <input type="submit" name="form_modif" value="Modifier">
+<form method="POST" id="prix_final" style="display: none;" >
+    <textarea name="final_prix" id="Update_textarea" ></textarea><br>
+    <input type="submit" name="form_modif" value="Modifier" id="Up_sub"><br>
 </form>
 <div id="pricemsg"></div>
 
@@ -23,6 +23,20 @@ $(document).ready(function(){
     });
     
 });
-
+$(function(){
+    $("#prix_final").submit(function(){//id de la barre de recherche    
+        final_prix = $(this).find("textarea[name=final_prix]").val();
+        $.post("update_prix.php?prod=<?= $produit->getId() ?>",{final_prix:final_prix},function(){
+            if(final_prix === ""){
+                 $("#pricemsg").empty().append("<div>Votre final_prix n°1 est vide.</div>");
+            }
+            if(final_prix !==""){
+                $("#pricemsg").empty().append("<div>Votre final_prix n°1 a bien été modifié.</div>");                
+                document.location.href="update.php?prod=<?= $produit->getId() ?>"; 
+            }
+        });
+        return false;
+    });
+});
 
 </script>

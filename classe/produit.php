@@ -270,6 +270,22 @@ class produit{
             return true;
         }
     } 
+    public function modifierPrix(){
+        //Rôle : modifier un produit dans la base de donnée
+        //Paramètre : néant
+        // Retour : true si réussi, false sinon 
+        
+        global $bdd;
+        $sql = "UPDATE `produit` SET  `final_prix` =:final_prix WHERE produit.id = :id";
+        $req = $bdd->prepare($sql);
+        if ($req->execute( [    ":id" => $this->id,
+                                ":final_prix" => $this->final_prix]) === false) {
+            echo "Erreur requête : $sql";
+            return false;
+        }else{
+            return true;
+        }
+    } 
     public function cat1(){
         // Rôle : rechercher les produits en ligne
         // Retour : produit concerné

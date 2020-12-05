@@ -29,6 +29,7 @@ if($action !== null)
    $f = preg_replace('#\v#', '',$f);
    //On vérifie que $p est un float
    $p = floatval($p);
+   //$p = number_format($p, 2);
 
    //On traite $q qui peut être un entier simple ou un tableau d'entiers
     

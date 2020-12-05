@@ -41,7 +41,7 @@
                 <div class="form-container">
                   <form method="post" style="position: absolute;left: 14%; top: 5%;" >
                     <div id="errors" style="font-size: 18px;color:darkred;"></div>
-                    <input type="text" name="address" id="card-adress" placeholder="42 rue la mulatière , Lyon 69000 " required >
+                    <input type="text" name="address" id="card-adress" placeholder="42 rue la mulatière , Paris 75000 " required >
                     <input type="email" name="email" id="card-email" placeholder="Email " required>
                     <input type="text" id="cardholder-name" placeholder="Titulaire de la carte" required>
                     <div id="card-elements"></div> 

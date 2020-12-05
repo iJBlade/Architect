@@ -54,9 +54,9 @@
                                                     <img src='photoproduit1/<?= htmlspecialchars($_SESSION['panier']['id_image'][$i]) ?>.jpg' alt='' />
                                                 </div>
                                                 <span><?= htmlspecialchars($_SESSION['panier']['titre'][$i]) ?></span>
-                                                <strong><?= htmlspecialchars($_SESSION['panier']['prixProduit'][$i]) ?> €</strong>
+                                                <strong><?= (floatval(htmlspecialchars($_SESSION['panier']['prixProduit'][$i]))) ?> €</strong>
                                                 <div class='cart-item-border'></div>
-                                                <div class='delete-item'></div>
+                                            
                                             </div>
                                         <?php } 
                                         }
