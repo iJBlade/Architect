@@ -3,11 +3,9 @@ window.onload = () => {
     let stripe = Stripe('pk_test_51HmHUZKxldL9XsGAmMltKVRksYjinwLli2Xniop3IcUggn7kuMdkce1R9K4PhI6r8CrPqD6H7AQdN2bzijMiA27c00mKT3gMrf');
     // déclarer les éléments de cartes     pk_live_51HmHUZKxldL9XsGA39ZlWbC0Cfm3flUC40LvQBwdo1MHMUsF7jczHmfqLRksnwxoD0qyRrtDazJl43qcnpbBCFYq002z5dYUtq
     let elements = stripe.elements();
-    let redirect = "shop.php"; // si jamais le paiement est un succès, nous on va mettre sur une commande/résultat/récapitulif 
-    //style css
+    let redirect = "commande.php"; // si jamais le paiement est un succès, nous on va mettre sur une commande/résultat/récapitulif 
 
     // objets éléments de la page
-    let cardAdress = document.getElementById("card-adress");
     let cardEmail = document.getElementById("card-email") ;
     let cardHolderName = document.getElementById("cardholder-name");
     let cardButton = document.getElementById("card-button");
@@ -35,7 +33,7 @@ window.onload = () => {
         stripe.handleCardPayment(
             clientSecret,card,{
                 payment_method_data:{
-                    billing_details : {name: cardHolderName.value , email :cardEmail.value , address: cardAdress.value }
+                    billing_details : {name: cardHolderName.value , email :cardEmail.value ,}
                 }
             }
         ).then((result) => {
@@ -49,5 +47,10 @@ window.onload = () => {
 
 
 
+
+
+
 }
+
+
 

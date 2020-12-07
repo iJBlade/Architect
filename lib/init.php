@@ -12,6 +12,7 @@ include 'classe/admin.php';
 include 'classe/chronique.php';
 include 'classe/produit.php';
 include 'classe/categories.php';
+include 'classe/commande.php';
 /* ******************* * Connexion à la base de données * ******************* */
 global $bdd; 
 $bdd=new PDO("mysql:host=Localhost;dbname=marie;charset=UTF8","ines1","24051994"); 

@@ -13,7 +13,7 @@
             'currency' => 'eur'
         ]) ;
       }else{
-        header("Location:panier.php");
+       // header("Location:panier.php");
       }
 
 ?>
@@ -41,12 +41,14 @@
                 <div class="form-container">
                   <form method="post" style="position: absolute;left: 14%; top: 5%;" >
                     <div id="errors" style="font-size: 18px;color:darkred;"></div>
-                    <input type="text" name="address" id="card-adress" placeholder="42 rue la mulatière , Paris 75000 " required >
-                    <input type="email" name="email" id="card-email" placeholder="Email " required>
-                    <input type="text" id="cardholder-name" placeholder="Titulaire de la carte" required>
-                    <div id="card-elements"></div> 
+
+              <?php /************************************************Information pour Stripe, uniquement carte bancaire + alert erreur *************************************** */ ?>                
                     <div id="card-errors" role="alert"></div>
+                    <input type="email" name="email" id="card-email" class="email" placeholder="Email " >
+                    <input type="text" name="nom" id="cardholder-name" class="cardholder-name" placeholder="Titulaire de la carte" >
+                    <div id="card-elements"></div> 
                     <button id="card-button" type="button" data-secret="<?= $intent["client_secret"]?>" value="Payer" class="card-button">Procéder au paiement</button>
+                    
                   </form>
                 </div>
               </div>
@@ -57,14 +59,15 @@
                 <div style="overflow-y: scroll;height: 550px;">
                  
              
-                  <?php
+                <?php
                         if (creationPanier())
                         {
                            $nbArticles=count($_SESSION['panier']['titre']);
                            if ($nbArticles <= 0)
                            echo "<tr><td style='color:red;font-size:20px;'>Oups, votre panier est vide ! </ td></tr>";
                            else
-                           {
+                           { 
+                  
                               for ($i=0 ;$i < $nbArticles ; $i++)
                               { ?>
                               <div style="display: flex;width: 100%;font-size: 20px;margin: 24px auto;">
@@ -88,7 +91,7 @@
                       <div style="margin: 10px;"><span style="color:gray;">Livraison :</span> Gratuite </div>
                     </div>
                     <div>
-                      <div style="margin: 30px 10px;"><span style="color:gray;">Total :</span> <?= MontantGlobal() ?> €<span style="font-size: 15px;">/TTC</span></div>   
+                      <div style="margin: 30px 10px;"><span style="color:gray;">Total :</span><?= MontantGlobal() ?>€<span style="font-size: 15px;">/TTC</span></div>   
                     </div>
                 </div>
                 <?php }

@@ -66,7 +66,7 @@
                         <li id="field_1_16" >
                             <label class="gfield_label">Type de local</label>
                             <div class="ginput_container ginput_container_checkbox" style="margin:2px 45px;">
-                                <ul class="gfield_checkbox" id="input_1_16">
+                                <ul class="gfield_checkbox" id="input_1_16" style="text-align: left;">
                                     <li class="gchoice_1_16_1">
                                         <input name="input_16.1" type="checkbox" value="Maison" id="choice_1_16_1">
                                         <label for="choice_1_16_1" id="choix">Maison</label>
@@ -100,7 +100,7 @@
                         </li>    
                         <li id="field_1_17" class="gfield field_sublabel_below field_description_below gfield_visibility_visible">
                             <label class="gfield_label">Pièces à traiter</label><div class="ginput_container ginput_container_checkbox">
-                                <ul class="gfield_checkbox" id="input_1_17">
+                                <ul class="gfield_checkbox" id="input_1_17" style="text-align: left;">
                                     <li class="gchoice_1_17_1">
                                         <input name="input_17.1" type="checkbox" value="Toutes les pièces" id="choice_1_17_1">
                                         <label for="choice_1_17_1" id="choix">Toutes les pièces</label>
@@ -137,7 +137,7 @@
                         <li id="field_1_20" class="gfield field_sublabel_below field_description_below gfield_visibility_visible">
                             <label class="gfield_label">Nature des travaux</label>
                             <div class="ginput_container ginput_container_checkbox">
-                                <ul class="gfield_checkbox" id="input_1_20">
+                                <ul class="gfield_checkbox" id="input_1_20" style="text-align: left;">
                                     <li class="gchoice_1_20_1">
                                         <input name="input_20.1" type="checkbox" value="Construction neuve" id="choice_1_20_1">
                                         <label for="choice_1_20_1" id="choix">Construction neuve</label>
@@ -152,12 +152,12 @@
                         <li id="field_1_21" class="gfield field_sublabel_below field_description_below gfield_visibility_visible">
                             <label class="gfield_label">Nature du projet</label>
                             <div class="ginput_container ginput_container_checkbox">
-                                <ul class="gfield_checkbox" id="input_1_21">
+                                <ul class="gfield_checkbox" id="input_1_21" style="text-align: left;">
                                     <li class="gchoice_1_21_1">
                                         <input name="input_21.1" type="checkbox" value="Architecture d’Intérieur" id="choice_1_21_1">
                                         <label for="choice_1_21_1" id="choix">Architecture d’Intérieur</label>
                                     </li>
-                                    <li class="gchoice_1_21_2">
+                                    <li class="gchoice_1_21_2" style="text-align: left;">
                                         <input name="input_21.2" type="checkbox" value="Décoration d’Intérieur" id="choice_1_21_2">
                                         <label for="choice_1_21_2" id="choix">Décoration d’Intérieur</label>
                                     </li>
