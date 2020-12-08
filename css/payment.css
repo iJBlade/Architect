@@ -50,7 +50,6 @@
     border-radius: 5px;
     font-size: 22px;
     font-weight: 500;
-    font-family: "Source Sans Pro", sans-serif;
     box-shadow: 3px 10px 20px 0px rgba(35, 100, 210, 0.3);
     color: #fff;
     margin-top: 20px;
@@ -67,7 +66,6 @@
     padding: 5px 15px;
     background: none;
     color: #1a3b5d;
-    font-family: "Source Sans Pro", sans-serif;
   }
 
 #card-elements{
@@ -126,13 +124,13 @@
 }
 /********summary ordered *********/
 #summary_ordered{
-  box-shadow: 1px 4px 5px 3px gray;
+  box-shadow: 1px 4px 5px 3px grey;
   background-color: white;
   width: 600px;
-
   position: absolute;
-  right: 0.2%;
+  right: 1%;
   top: 7%;
+  border-radius: 4px;
 }
 #summary_ordered_bottom{
   background-color: white;

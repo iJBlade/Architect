@@ -1,6 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url("https://p.typekit.net/p.css?s=1&k=qgy5yjv&ht=tk&f=45504.45505.45510.45511&a=45096923&app=typekit&e=css");
+@font-face {
+	font-family:"alga";
+	src:url("https://use.typekit.net/af/578f06/00000000000000003b9b482e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/578f06/00000000000000003b9b482e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/578f06/00000000000000003b9b482e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display:auto;font-style:normal;font-weight:400;
+	}
+	
 .snip1584 {
-  font-family: 'Raleway', sans-serif;
   position: relative;
   display: inline-block;
   overflow: hidden;

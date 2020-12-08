@@ -5,15 +5,15 @@
             <h2 style="padding: 22px 0px;margin: 2px 0px;">Création d'un nouveau produit - Etape n°1 : Insertion du texte.</h2>
             <div class="group-form">
                 <input type="text" name="titre" class="fat" required>
-                <label>Titre de l'article</label>      
+                <label>Titre du produit</label>      
             </div>
             <div class="group-form">
-                <textarea name="contenu" class="fat" required></textarea>
-                <label>Description n°1</label>        
+                <p style="float: left;padding-left: 18px;font-size: 16px;padding: 10px;">Description n°1</p>
+                <textarea name="contenu" required style="width:100%;border: 1px solid black;"></textarea>     
             </div>
             <div class="group-form">
-                <textarea name="contenu2" class="fat" required></textarea>
-                <label>Description n°2</label>        
+                <p style="float: left;padding-left: 18px;font-size: 16px;padding: 10px;">Description n°2</p>    
+                <textarea name="contenu2" required style="width:100%;border: 1px solid black;"></textarea>    
             </div>
             <div class="group-form" >
                 <input type="number" name="prix" class="fat" min="0" step="any" required>

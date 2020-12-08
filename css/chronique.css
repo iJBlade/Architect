@@ -3,6 +3,7 @@ body{
 }
 main{
     padding-top:75px;
+    padding-bottom: 1000px;
 }
 #container_head{
     position:absolute;
@@ -12,13 +13,13 @@ main{
     margin: 0 auto;
 }
 #container_bottom{
-    position:absolute;
-    top:70%;
-    left:25%;
-    background-color:white;
+    position: absolute;
+    top: 69%;
+    left: 25%;
+    background-color: white;
     width: 1000px;
-
     margin: 0 auto;
+    height: 100%;
 }
 #top_column{
     width: 1000px;

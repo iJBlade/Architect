@@ -66,7 +66,7 @@
  
                         </div>
 <?php /************************************************* Selection de la grille : 3x3 ou 2x2 ********************************************************************* */ ?>
-                        <div id="grid-selector">
+                        <div id="grid-selector" style="color:black;font-weight:bold;">
                             <div id="grid-menu">
                                 Vue:
                                 <ul>           	   
@@ -90,27 +90,7 @@
                                     </div>             
                                     <div class="price-big">
                                         <span></span><?php echo $produit->final_prix; ?>€
-                                    </div>
-                                    
-                                    <h3>COLORS</h3>
-                                    <div class="colors-large">
-                                        <ul>
-                                            <li><a href="" style="background:#222"><span></span></a></li>
-                                            <li><a href="" style="background:#6e8cd5"><span></span></a></li>
-                                            <li><a href="" style="background:#f56060"><span></span></a></li>
-                                            <li><a href="" style="background:#44c28d"><span></span></a></li>
-                                        </ul> 
-                                    </div>
-
-                                    <h3>SIZE</h3>
-                                    <div class="sizes-large">
-                                        <span>XS</span>
-                                        <span>S</span>
-                                        <span>M</span>
-                                        <span>L</span>
-                                        <span>XL</span>
-                                        <span>XXL</span>
-                                    </div>                      
+                                    </div>                    
                                     <a href="shopping.php?id=<?php echo $produit->id;?>" class="more" style="/*! margin-top: 69px; *//*! width: 100%; */position: absolute;bottom: 12%;left: 37%;" id="aA">En savoir plus</a>           
                                 </div>
                                 <div class="make3D">
@@ -125,19 +105,8 @@
                                             <div class="stats-container">
                                                 <span class="product_price"><?php echo $produit->final_prix; ?>€</span>
                                                 <span class="product_name"><?php echo $produit->titre; ?></span>    
-                                                <p>Catégorie</p>                                            
-                                                
-                                                <div class="product-options">
-                                                <strong>SIZES</strong>
-                                                <span>XS, S, M, L, XL, XXL</span>
-                                                <strong>COLORS</strong>
-                                                <div class="colors">
-                                                    <div class="c-blue"><span></span></div>
-                                                    <div class="c-red"><span></span></div>
-                                                    <div class="c-white"><span></span></div>
-                                                    <div class="c-green"><span></span></div>                           
-                                                </div><br>
-                                            </div>                       
+                                                <a href="shopping.php?id=<?php echo $produit->id;?>" class="more" style="padding-top:50px;" id="aA">En savoir plus</a>                                            
+                                
                                             </div>                         
                                         </div>
                                     </div>

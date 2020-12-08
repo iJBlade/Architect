@@ -31,27 +31,33 @@
                           <div class="cols">
                             <div class="left-col">
                               <div class="thumbs">
-                                <a class="thumb-image active" href="photoproduit1/<?= htmlentities($produit->id)?>.jpg" data-index="0">
-                                  <span><img src="photoproduit1/<?= htmlentities($produit->id)?>.jpg" alt="photoproduit1/<?= htmlentities($produit->titre)?>"></span>
+                                <a class="thumb-image active">
+                                  <span><img src="photoproduit1/<?= htmlentities($produit->id)?>.jpg" alt="photoproduit1/<?= htmlentities($produit->titre)?>" onclick="document.getElementById('img_select').src='photoproduit1/<?= htmlentities($produit->id)?>.jpg'"></span>
                                 </a>
-                                <a class="thumb-image" href="photoproduit2/<?= htmlentities($produit->id)?>.jpg" data-index="1">
-                                  <span><img src="photoproduit2/<?= htmlentities($produit->id)?>.jpg" alt="photoproduit2/<?= htmlentities($produit->titre)?>"></span>
+                                <a class="thumb-image">
+                                  <span><img src="photoproduit2/<?= htmlentities($produit->id)?>.jpg" alt="photoproduit2/<?= htmlentities($produit->titre)?>" onclick="document.getElementById('img_select').src='photoproduit2/<?= htmlentities($produit->id)?>.jpg'" ></span>
                                 </a>
-                                <a class="thumb-image" href="photoproduit3/<?= htmlentities($produit->id)?>.jpg" data-index="1">
-                                  <span><img src="photoproduit3/<?= htmlentities($produit->id)?>.jpg" alt="photoproduit3/<?= htmlentities($produit->titre)?>"></span>
+                                <a class="thumb-image">
+                                  <span><img src="photoproduit3/<?= htmlentities($produit->id)?>.jpg" alt="photoproduit3/<?= htmlentities($produit->titre)?>" onclick="document.getElementById('img_select').src='photoproduit3/<?= htmlentities($produit->id)?>.jpg'"></span>
                                 </a>
                                 
                               </div>
                               <div class="big">
-                                <img  src="photoproduit1/<?= htmlentities($produit->id)?>.jpg" ></img>
+                                <img  id="img_select" src="photoproduit1/<?= htmlentities($produit->id)?>.jpg" ></img>
                                 <div id="banner-gallery" class="swipe">
                                   <div class="swipe-wrap">
-                                    <div style="background-image: photoproduit1/<?= htmlentities($produit->id)?>.jpg"></div>
-                                    <div style="background-image: photoproduit2/<?= htmlentities($produit->id)?>.jpg"></div>
-                                    <div style="background-image: photoproduit3/<?= htmlentities($produit->id)?>.jpg"></div>
+                                    <img src=" photoproduit1/<?= htmlentities($produit->id)?>.jpg"></img>
+                                    <img src=" photoproduit2/<?= htmlentities($produit->id)?>.jpg" ></img>
+                                    <img src=" photoproduit3/<?= htmlentities($produit->id)?>.jpg" ></img>
                                   </div>
                                 </div>
                               </div>
+
+
+            
+
+
+
                             </div>
                             <div class="right-col">
                               <h1 itemprop="name"><?= htmlentities($produit->titre)?></h1>
@@ -63,69 +69,6 @@
                                   <?= htmlentities($produit->final_prix)?>
                                   </div>
                                   <p style="color:#086fcf">€/TTC</p>
-                                </div>
-                                <div class="swatches">
-                                  <div class="swatch clearfix" data-option-index="0">
-                                    <div class="header">Size</div>
-                                    <div data-value="M" class="swatch-element plain m available">
-                                      <input id="swatch-0-m" type="radio" name="option-0" value="M" checked  />
-                                      <label for="swatch-0-m">
-                                        M
-                                        <img class="crossed-out" src="//cdn.shopify.com/s/files/1/1047/6452/t/1/assets/soldout.png?10994296540668815886" />
-                                      </label>
-                                    </div>
-                                    <div data-value="L" class="swatch-element plain l available">
-                                      <input id="swatch-0-l" type="radio" name="option-0" value="L"  />
-                                      <label for="swatch-0-l">
-                                        L
-                                        <img class="crossed-out" src="//cdn.shopify.com/s/files/1/1047/6452/t/1/assets/soldout.png?10994296540668815886" />
-                                      </label>
-                                    </div>
-                                    <div data-value="XL" class="swatch-element plain xl available">
-                                      <input id="swatch-0-xl" type="radio" name="option-0" value="XL"  />
-                                      <label for="swatch-0-xl">
-                                        XL
-                                        <img class="crossed-out" src="//cdn.shopify.com/s/files/1/1047/6452/t/1/assets/soldout.png?10994296540668815886" />
-                                      </label>
-                                    </div>
-                                    <div data-value="XXL" class="swatch-element plain xxl available">
-                                      <input id="swatch-0-xxl" type="radio" name="option-0" value="XXL"  />
-                                      <label for="swatch-0-xxl">
-                                        XXL
-                                        <img class="crossed-out" src="//cdn.shopify.com/s/files/1/1047/6452/t/1/assets/soldout.png?10994296540668815886" />
-                                      </label>
-                                    </div>
-                                  </div>
-                                  <div class="swatch clearfix" data-option-index="1">
-                                    <div class="header">Color</div>
-                                    <div data-value="Blue" class="swatch-element color blue available">
-                                      <div class="tooltip">Blue</div>
-                                      <input quickbeam="color" id="swatch-1-blue" type="radio" name="option-1" value="Blue" checked  />
-                                      <label for="swatch-1-blue" style="border-color: blue;">
-                                        <img class="crossed-out" src="//cdn.shopify.com/s/files/1/1047/6452/t/1/assets/soldout.png?10994296540668815886" />
-                                        <span style="background-color: blue;"></span>
-                                      </label>
-                                    </div>
-                                    <div data-value="Red" class="swatch-element color red available">
-                                      <div class="tooltip">Red</div>
-                                      <input quickbeam="color" id="swatch-1-red" type="radio" name="option-1" value="Red"  />
-                                      <label for="swatch-1-red" style="border-color: red;">
-                                        <img class="crossed-out" src="//cdn.shopify.com/s/files/1/1047/6452/t/1/assets/soldout.png?10994296540668815886" />
-                                        <span style="background-color: red;"></span>
-                                      </label>
-                                    </div>
-                                    <div data-value="Yellow" class="swatch-element color yellow available">
-                                      <div class="tooltip">Yellow</div>
-                                      <input quickbeam="color" id="swatch-1-yellow" type="radio" name="option-1" value="Yellow"  />
-                                      <label for="swatch-1-yellow" style="border-color: yellow;">
-                                        <img class="crossed-out" src="//cdn.shopify.com/s/files/1/1047/6452/t/1/assets/soldout.png?10994296540668815886" />
-                                        <span style="background-color: yellow;"></span>
-                                      </label>
-                                    </div>
-                                  </div>
-                                  <div class="guide">
-                                    <a>Size guide</a>
-                                  </div>
                                 </div>
                                 <!-- <form method="post" enctype="multipart/form-data" id="AddToCartForm"> -->
                                 <form id="AddToCartForm">
@@ -215,33 +158,6 @@
                                 <span>
                                 <?=htmlentities($produit->getFinal_prix())?>€
                                 </span>
-                                <div class="variants">
-                                  <div class="variant">
-                                    <div class="var m available">
-                                      <div class="t">M</div>
-                                    </div>
-                                    <div class="var l available">
-                                      <div class="t">L</div>
-                                    </div>
-                                    <div class="var xl available">
-                                      <div class="t">XL</div>
-                                    </div>
-                                    <div class="var xxl available">
-                                      <div class="t">XXL</div>
-                                    </div>
-                                  </div>
-                                  <div class="variant">
-                                    <div class="var color blue available">
-                                      <div class="c" style="background-color: blue;"></div>
-                                    </div>
-                                    <div class="var color red available">
-                                      <div class="c" style="background-color: red;"></div>
-                                    </div>
-                                    <div class="var color yellow available">
-                                      <div class="c" style="background-color: yellow;"></div>
-                                    </div>
-                                  </div>
-                                </div>
                               </span>
                               <?php } ?>
                             </a>

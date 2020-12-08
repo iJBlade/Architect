@@ -45,7 +45,7 @@
                                  echo "<tr style='/*! background-color: red; */height: 120px;font-size: 25px;'>";
                                  echo "<td><img src='photoproduit1/".htmlspecialchars($_SESSION['panier']['id_image'][$i]).".jpg' width='75px' height='40px' style='padding-left:15px;margin:12px;'></td>";
                                  echo "<td>".htmlspecialchars($_SESSION['panier']['titre'][$i])."</ td>";
-                                 echo "<td><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['panier']['qteProduit'][$i])."\"/></td>";
+                                 echo "<td><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['panier']['qteProduit'][$i])."\" style='border: 2px solid black; border-radius: 4px; '/></td>";
                                  echo "<td>".(floatval(htmlspecialchars($_SESSION['panier']['prixProduit'][$i])))."€</td>";
                                  echo "<td>".htmlspecialchars($_SESSION['panier']['prixProduit'][$i]) * htmlspecialchars($_SESSION['panier']['qteProduit'][$i])."€</td>";
                                  echo "<td><a href=\"".htmlspecialchars("panier.php?action=suppression&l=".rawurlencode($_SESSION['panier']['titre'][$i]))."\"><svg class='svg-icon' viewBox='0 0 20 20' width='25px' fill='black'>

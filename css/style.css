@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'FuturaPT-Book';
+    font-family: "alga",serif;
     font-weight: 400;
     font-size: 12px;
     color: #000;
@@ -26,4 +26,11 @@ main{
 .justify{
     justify-content: space-between;
 }
+    @font-face {
+    font-family:"alga";
+    src:url("https://use.typekit.net/af/578f06/00000000000000003b9b482e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/578f06/00000000000000003b9b482e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/578f06/00000000000000003b9b482e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;
+    }
+
+    
 /************** animation text ****************************/

@@ -4,23 +4,23 @@
             <h2 style="padding: 22px 0px;margin: 2px 0px;">Création d'un nouveau portfolio - Etape n°1 : Insertion des paragraphes.</h2> 
             <div class="group-form">
                 <input type="text" name="titre" class="fat" required>
-                <label>Titre de l'article</label>      
+                <label>Titre de l'article pour le portfolio</label>      
             </div>
             <div class="group-form">
-                <textarea name="contenu" class="fat" required></textarea>
-                <label>Contenu n°1</label>        
+                <p style="float: left;padding-left: 18px;font-size: 16px;padding: 10px;">Contenu n°1</p>    
+                <textarea name="contenu" required style="width:100%;border: 1px solid black;"></textarea>       
             </div>
             <div class="group-form">
-                <textarea name="contenu2" class="fat" required></textarea>
-                <label>Contenu n°2</label>        
+                <p style="float: left;padding-left: 18px;font-size: 16px;padding: 10px;">Contenu n°2</p>    
+                <textarea name="contenu2" required style="width:100%;border: 1px solid black;"></textarea>     
             </div>
             <div class="group-form">
-                <textarea name="contenu3" class="fat" required></textarea>
-                <label>Contenu n°3</label>        
+                <p style="float: left;padding-left: 18px;font-size: 16px;padding: 10px;">Contenu n°3</p>    
+                <textarea name="contenu3" style="width:100%;border: 1px solid black;"></textarea>         
             </div>
             <div class="group-form">
-                <textarea name="contenu4" class="fat" required></textarea>
-                <label>Contenu n°4</label>        
+                <p style="float: left;padding-left: 18px;font-size: 16px;padding: 10px;">Contenu n°4</p>    
+                <textarea name="contenu4" style="width:100%;border: 1px solid black;"></textarea>        
             </div>     
             <div>
                 <input type="hidden" name="statut_article" value="0">     
